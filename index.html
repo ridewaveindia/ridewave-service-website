@@ -1,0 +1,2854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>RideWave Technologies — AI-Driven Digital Transformation</title>
+  <meta name="title" content="RideWave Technologies | Full Stack Development & AI Solutions">
+  <meta name="description"
+    content="RideWave Technologies transforms ideas into scalable digital products through Full Stack Development, AI Engineering, Cloud Infrastructure, DevOps, SaaS Development, UI/UX Design, Mobile Apps, Cybersecurity, and Intelligent Automation.">
+  <meta name="keywords"
+    content="Full Stack Development, Full Stack Developer, MERN Stack Development, MEAN Stack Development, React Development, Next.js Development, Vue.js Development, Angular Development, Frontend Development, Backend Development, Node.js Development, Python Development, Django Development, FastAPI Development, Java Development, Spring Boot Development, PHP Development, Laravel Development, Mobile App Development, Flutter Development, Android App Development, iOS App Development, Web Application Development, SaaS Development, Custom Software Development, AI Development, Artificial Intelligence Solutions, AI Agents, AI Chatbots, Machine Learning Solutions, Generative AI Development, Automation Services, Cloud Computing, AWS Development, Azure Solutions, Google Cloud Platform, DevOps Services, Docker, Kubernetes, Terraform, CI/CD Pipeline, Cloud Native Applications, Cybersecurity Solutions, Data Engineering, API Development, Microservices Architecture, Enterprise Software Development, Startup Technology Partner, UI UX Design, Scalable Systems, Digital Transformation, RideWave Technologies">
+
+
+
+  <meta name="author" content="RideWave Technologies">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="RideWave Technologies | Turning Ideas Into Digital Reality">
+  <meta property="og:description"
+    content="We build AI-powered applications, scalable cloud systems, full stack platforms, and modern digital products for startups and enterprises.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta property="og:url" content="https://tech.ridewave.in">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RideWave Technologies | Full Stack AI Engineering">
+  <meta name="twitter:description"
+    content="From idea to launch — we engineer scalable web apps, AI systems, mobile applications, and cloud-native platforms.">
+  <meta name="twitter:image" content="assets/img/og-image.jpg">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://tech.ridewave.in">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/favicon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+    integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendors/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendors/aos/aos.css" rel="stylesheet">
+  <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- ============================================================
+       AI / Premium Enhancement Styles
+       (layered ON TOP of existing main.css — preserves brand color & fonts)
+       ============================================================ -->
+  <style>
+    :root {
+      --ai-accent: #ff8a00;
+      --ai-accent-2: #ffa940;
+      --ai-accent-deep: #e67700;
+      --ai-glow: rgba(255, 138, 0, 0.45);
+      --ai-glow-soft: rgba(255, 138, 0, 0.15);
+      --ai-ink: #0a0e1a;
+      --ai-line: rgba(255, 138, 0, 0.18);
+      --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    /* ---------- 1. Scroll progress bar ---------- */
+    .ai-scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--ai-accent), var(--ai-accent-2), var(--ai-accent));
+      background-size: 200% 100%;
+      z-index: 9999;
+      box-shadow: 0 0 12px var(--ai-glow);
+      animation: ai-shimmer 3s linear infinite;
+      transition: width 0.1s linear;
+    }
+
+    @keyframes ai-shimmer {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      100% {
+        background-position: 200% 50%;
+      }
+    }
+
+    /* ---------- 2. Neural network canvas background (site-wide) ---------- */
+    #ai-neural-canvas {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.35;
+    }
+
+    .hero,
+    .features-2,
+    #ai-stats,
+    #ai-technologies {
+      position: relative;
+    }
+
+    /* ---------- 3. Custom AI cursor (desktop only) ---------- */
+    @media (hover: hover) and (pointer: fine) {
+
+      body.ai-cursor-active,
+      body.ai-cursor-active * {
+        cursor: none !important;
+      }
+
+      .ai-cursor {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 36px;
+        height: 36px;
+        border: 1.5px solid var(--ai-accent);
+        border-radius: 50%;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        transition: width 0.25s var(--ease-premium),
+          height 0.25s var(--ease-premium),
+          border-color 0.25s var(--ease-premium),
+          background 0.25s var(--ease-premium);
+        z-index: 99998;
+        mix-blend-mode: difference;
+      }
+
+      .ai-cursor-dot {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 6px;
+        height: 6px;
+        background: var(--ai-accent);
+        border-radius: 50%;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        z-index: 99999;
+        box-shadow: 0 0 12px var(--ai-glow);
+      }
+
+      .ai-cursor.is-hover {
+        width: 64px;
+        height: 64px;
+        background: var(--ai-glow-soft);
+        border-color: var(--ai-accent-2);
+      }
+
+      .ai-cursor.is-click {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    @media (hover: none),
+    (pointer: coarse) {
+
+      .ai-cursor,
+      .ai-cursor-dot {
+        display: none !important;
+      }
+    }
+
+    /* ---------- 4. Premium card hover ---------- */
+    .ai-tilt {
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.4s var(--ease-premium), box-shadow 0.4s var(--ease-premium);
+      will-change: transform;
+    }
+
+    .ai-tilt::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: linear-gradient(120deg,
+          transparent 30%,
+          rgba(255, 255, 255, 0.18) 50%,
+          transparent 70%);
+      opacity: 0;
+      transition: opacity 0.5s var(--ease-premium), transform 0.9s var(--ease-premium);
+      transform: translateX(-100%) skewX(-15deg);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .ai-tilt:hover::before {
+      opacity: 1;
+      transform: translateX(100%) skewX(-15deg);
+    }
+
+    .ai-tilt::after {
+      content: "";
+      position: absolute;
+      inset: -1px;
+      border-radius: inherit;
+      padding: 1.5px;
+      background: conic-gradient(from var(--angle, 0deg),
+          transparent 0deg,
+          var(--ai-accent) 60deg,
+          var(--ai-accent-2) 120deg,
+          transparent 180deg,
+          transparent 360deg);
+      -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      opacity: 0;
+      transition: opacity 0.4s var(--ease-premium);
+      pointer-events: none;
+      z-index: 3;
+      animation: ai-rotate-angle 4s linear infinite;
+    }
+
+    .ai-tilt:hover::after {
+      opacity: 1;
+    }
+
+    @property --angle {
+      syntax: '<angle>';
+      initial-value: 0deg;
+      inherits: false;
+    }
+
+    @keyframes ai-rotate-angle {
+      to {
+        --angle: 360deg;
+      }
+    }
+
+    .ai-tilt:hover {
+      box-shadow: 0 24px 60px -20px var(--ai-glow), 0 0 0 1px var(--ai-line);
+    }
+
+    .ai-tilt>* {
+      transform: translateZ(0);
+      transition: transform 0.4s var(--ease-premium);
+    }
+
+    .ai-tilt:hover .feature-icon,
+    .ai-tilt:hover .service-icon,
+    .ai-tilt:hover .service-icon-large,
+    .ai-tilt:hover .achievement-icon,
+    .ai-tilt:hover .card-icon,
+    .ai-tilt:hover .icon-wrapper {
+      transform: translateZ(40px) scale(1.08);
+    }
+
+    /* ---------- 5. Pulse rings on icons ---------- */
+    .feature-icon,
+    .service-icon,
+    .service-icon-large,
+    .achievement-icon,
+    .card-icon,
+    .icon-wrapper {
+      position: relative;
+      transition: transform 0.45s var(--ease-premium), color 0.3s ease;
+    }
+
+    .ai-pulse-host:hover .feature-icon::before,
+    .ai-pulse-host:hover .service-icon::before,
+    .ai-pulse-host:hover .service-icon-large::before,
+    .ai-pulse-host:hover .achievement-icon::before,
+    .ai-pulse-host:hover .card-icon::before,
+    .ai-pulse-host:hover .icon-wrapper::before {
+      content: "";
+      position: absolute;
+      inset: -8px;
+      border: 1.5px solid var(--ai-accent);
+      border-radius: inherit;
+      opacity: 0;
+      animation: ai-ring 1.4s var(--ease-premium) infinite;
+      pointer-events: none;
+    }
+
+    @keyframes ai-ring {
+      0% {
+        transform: scale(0.85);
+        opacity: 0.9;
+      }
+
+      100% {
+        transform: scale(1.6);
+        opacity: 0;
+      }
+    }
+
+    /* ---------- 6. Magnetic button hover ---------- */
+    .ai-magnetic {
+      transition: transform 0.35s var(--ease-premium), box-shadow 0.35s var(--ease-premium);
+      will-change: transform;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ai-magnetic::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.35), transparent 60%);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: width 0.6s var(--ease-premium), height 0.6s var(--ease-premium);
+      pointer-events: none;
+    }
+
+    .ai-magnetic:hover {
+      box-shadow: 0 14px 40px -10px var(--ai-glow);
+    }
+
+    .ai-magnetic:hover::after {
+      width: 320px;
+      height: 320px;
+    }
+
+    /* ---------- 7. Animated gradient text ---------- */
+    .ai-grad-text {
+      background: linear-gradient(90deg, var(--ai-accent) 0%, #1a1f3a 25%, var(--ai-accent) 50%, #1a1f3a 75%, var(--ai-accent) 100%);
+      background-size: 250% 100%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: ai-text-flow 8s linear infinite;
+    }
+
+    @keyframes ai-text-flow {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      100% {
+        background-position: 250% 50%;
+      }
+    }
+
+    .header.scrolled {
+      backdrop-filter: blur(14px) saturate(140%);
+      -webkit-backdrop-filter: blur(14px) saturate(140%);
+      background: rgba(255, 255, 255, 0.78) !important;
+      box-shadow: 0 8px 32px -12px rgba(10, 14, 26, 0.12);
+    }
+
+    /* =============================================================
+       ★★★  HERO — UPGRADED AI BACKGROUND  ★★★
+       ============================================================= */
+    .hero {
+      background:
+        radial-gradient(ellipse at 20% 10%, rgba(255, 138, 0, 0.10), transparent 55%),
+        radial-gradient(ellipse at 80% 90%, rgba(255, 169, 64, 0.08), transparent 55%),
+        linear-gradient(180deg, #fefcf9 0%, #fff7ec 50%, #fefcf9 100%);
+      overflow: hidden;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 120px 0 80px;
+      isolation: isolate;
+    }
+
+    /* 1. Perspective grid floor */
+    .hero-grid-floor {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%) perspective(800px) rotateX(60deg);
+      width: 200%;
+      height: 60%;
+      background-image:
+        linear-gradient(rgba(255, 138, 0, 0.35) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 138, 0, 0.35) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: linear-gradient(to top, #000 0%, #000 30%, transparent 90%);
+      -webkit-mask-image: linear-gradient(to top, #000 0%, #000 30%, transparent 90%);
+      animation: ai-grid-scroll 18s linear infinite;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.55;
+    }
+
+    @keyframes ai-grid-scroll {
+      from {
+        background-position: 0 0;
+      }
+
+      to {
+        background-position: 0 60px;
+      }
+    }
+
+    /* 2. Hexagonal pattern overlay */
+    .hero-hex-pattern {
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 20% 30%, rgba(255, 138, 0, 0.07) 0%, transparent 25%),
+        radial-gradient(circle at 80% 70%, rgba(255, 169, 64, 0.05) 0%, transparent 25%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* 3. Floating orbs (kept) */
+    .ai-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(60px);
+      opacity: 0.55;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .ai-orb-1 {
+      width: 380px;
+      height: 380px;
+      background: radial-gradient(circle, var(--ai-accent), transparent 65%);
+      top: 8%;
+      left: -8%;
+      animation: ai-float-1 14s ease-in-out infinite;
+    }
+
+    .ai-orb-2 {
+      width: 320px;
+      height: 320px;
+      background: radial-gradient(circle, #ffd1a3, transparent 70%);
+      bottom: 5%;
+      right: -6%;
+      animation: ai-float-2 18s ease-in-out infinite;
+    }
+
+    .ai-orb-3 {
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, var(--ai-accent-2), transparent 70%);
+      top: 50%;
+      left: 50%;
+      animation: ai-float-3 12s ease-in-out infinite;
+      opacity: 0.3;
+    }
+
+    @keyframes ai-float-1 {
+
+      0%,
+      100% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      50% {
+        transform: translate(40px, 30px) scale(1.1);
+      }
+    }
+
+    @keyframes ai-float-2 {
+
+      0%,
+      100% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      50% {
+        transform: translate(-30px, -40px) scale(1.15);
+      }
+    }
+
+    @keyframes ai-float-3 {
+
+      0%,
+      100% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+
+      50% {
+        transform: translate(-30%, -60%) scale(1.2);
+      }
+    }
+
+    /* 4. Hero-specific dense particle canvas */
+    #hero-particles {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.5;
+    }
+
+    /* 5. Animated AI sphere (top-right) */
+    .hero-sphere {
+      position: absolute;
+      top: 12%;
+      right: 6%;
+      width: 280px;
+      height: 280px;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.3;
+      animation: ai-sphere-rotate 22s linear infinite;
+    }
+
+    .hero-sphere svg {
+      width: 100%;
+      height: 100%;
+      filter: drop-shadow(0 0 30px rgba(255, 138, 0, 0.5));
+    }
+
+    @keyframes ai-sphere-rotate {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @media (max-width: 992px) {
+      .hero-sphere {
+        width: 180px;
+        height: 180px;
+        opacity: 0.4;
+        top: 5%;
+        right: -3%;
+      }
+    }
+
+    /* 6. Floating AI tech chips */
+    .hero-chip {
+      position: absolute;
+      padding: 8px 16px;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 138, 0, 0.3);
+      border-radius: 50px;
+      font-family: 'JetBrains Mono', 'Poppins', monospace;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ai-ink);
+      box-shadow: 0 8px 24px -8px rgba(255, 138, 0, 0.25);
+      pointer-events: none;
+      z-index: 1;
+      white-space: nowrap;
+      animation: ai-chip-float 8s ease-in-out infinite;
+    }
+
+    .hero-chip i {
+      color: var(--ai-accent);
+      margin-right: 6px;
+    }
+
+    .hero-chip-1 {
+      top: 22%;
+      left: 4%;
+      animation-delay: 0s;
+    }
+
+    .hero-chip-2 {
+      top: 70%;
+      left: 8%;
+      animation-delay: 1.5s;
+    }
+
+    .hero-chip-3 {
+      top: 18%;
+      right: 4%;
+      animation-delay: 3s;
+    }
+
+    .hero-chip-4 {
+      top: 75%;
+      right: 6%;
+      animation-delay: 4.5s;
+    }
+
+    .hero-chip-5 {
+      top: 45%;
+      left: 2%;
+      animation-delay: 2s;
+    }
+
+    .hero-chip-6 {
+      top: 50%;
+      right: 2%;
+      animation-delay: 5.5s;
+    }
+
+    @keyframes ai-chip-float {
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(-12px) rotate(1deg);
+      }
+    }
+
+    @media (max-width: 992px) {
+      .hero-chip {
+        display: none;
+      }
+
+      .hero-chip-1,
+      .hero-chip-3 {
+        display: block;
+        font-size: 11px;
+        padding: 6px 10px;
+      }
+    }
+
+    /* 7. Scanline / pulse beam */
+    .hero-scanline {
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg,
+          transparent 0%,
+          rgba(255, 138, 0, 0.04) 45%,
+          rgba(255, 138, 0, 0.10) 50%,
+          rgba(255, 138, 0, 0.04) 55%,
+          transparent 100%);
+      pointer-events: none;
+      z-index: 1;
+      animation: ai-scanline 7s ease-in-out infinite;
+    }
+
+    @keyframes ai-scanline {
+      0% {
+        left: -100%;
+      }
+
+      55% {
+        left: 100%;
+      }
+
+      100% {
+        left: 100%;
+      }
+    }
+
+    /* 8. Hero content layout */
+    .hero .container {
+      position: relative;
+      z-index: 5;
+    }
+
+    .hero-content {
+      text-align: center;
+    }
+
+    .hero-badge {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 22px;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 138, 0, 0.35);
+      border-radius: 100px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 13.5px;
+      font-weight: 500;
+      color: var(--ai-ink);
+      margin-bottom: 28px;
+      overflow: hidden;
+      box-shadow: 0 8px 32px -8px rgba(255, 138, 0, 0.2);
+    }
+
+    .hero-badge i {
+      color: var(--ai-accent);
+      font-size: 16px;
+    }
+
+    .hero-badge::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 138, 0, 0.4), transparent);
+      animation: ai-badge-sweep 3.5s ease-in-out infinite;
+    }
+
+    @keyframes ai-badge-sweep {
+      0% {
+        left: -100%;
+      }
+
+      60% {
+        left: 200%;
+      }
+
+      100% {
+        left: 200%;
+      }
+    }
+
+    .hero-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(2.4rem, 5.2vw, 4.4rem);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--ai-ink);
+      margin: 0 auto 28px;
+      max-width: 920px;
+    }
+
+    .hero-rotating {
+      display: inline-block;
+      position: relative;
+      min-width: 280px;
+      text-align: left;
+      vertical-align: baseline;
+    }
+
+    .hero-rotating-word {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--ai-accent) 0%, var(--ai-accent-deep) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: ai-word-cycle 8s infinite;
+    }
+
+    @media (max-width: 768px) {
+      .hero-rotating {
+        min-width: 0;
+        display: inline;
+      }
+    }
+
+    .ai-caret {
+      display: inline-block;
+      width: 4px;
+      height: 0.95em;
+      background: var(--ai-accent);
+      vertical-align: text-bottom;
+      margin-left: 4px;
+      animation: ai-blink 1s steps(2) infinite;
+      box-shadow: 0 0 12px var(--ai-glow);
+      border-radius: 2px;
+    }
+
+    @keyframes ai-blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .hero-description {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(1rem, 1.3vw, 1.15rem);
+      line-height: 1.75;
+      color: #4a5168;
+      max-width: 780px;
+      margin: 0 auto 40px;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 56px;
+    }
+
+    .hero-actions .btn-primary,
+    .hero-actions .btn-outline,
+    .btn-getstarted,
+    .submit-btn {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-actions .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 32px;
+      background: linear-gradient(135deg, var(--ai-accent), var(--ai-accent-deep));
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      text-decoration: none;
+      box-shadow: 0 12px 28px -8px var(--ai-glow);
+      transition: all 0.35s var(--ease-premium);
+    }
+
+    .hero-actions .btn-primary:hover {
+      box-shadow: 0 18px 40px -8px var(--ai-glow);
+    }
+
+    .hero-actions .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 28px;
+      border: 1.5px solid var(--ai-accent);
+      color: var(--ai-accent);
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(8px);
+      border-radius: 50px;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      text-decoration: none;
+      transition: all 0.35s var(--ease-premium);
+    }
+
+    .hero-actions .btn-outline:hover {
+      background: var(--ai-accent);
+      color: #fff;
+      box-shadow: 0 12px 30px -8px var(--ai-glow);
+    }
+
+    /* Hero stat-strip below CTAs */
+    .hero-strip {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 36px;
+      padding: 24px 36px;
+      background: rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 138, 0, 0.18);
+      border-radius: 20px;
+      max-width: 760px;
+      margin: 0 auto;
+      box-shadow: 0 10px 40px -12px rgba(255, 138, 0, 0.15);
+    }
+
+    .hero-strip-item {
+      text-align: center;
+      min-width: 130px;
+    }
+
+    .hero-strip-num {
+      font-family: 'Poppins', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--ai-accent), var(--ai-accent-deep));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+
+    .hero-strip-label {
+      font-family: 'Poppins', sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      color: #5a6178;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+
+    /* Down-scroll indicator */
+    .hero-scroll-cue {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 26px;
+      height: 42px;
+      border: 2px solid rgba(255, 138, 0, 0.5);
+      border-radius: 14px;
+      z-index: 5;
+      pointer-events: none;
+    }
+
+    .hero-scroll-cue::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 8px;
+      background: var(--ai-accent);
+      border-radius: 2px;
+      animation: ai-scroll-dot 1.8s ease-in-out infinite;
+    }
+
+    @keyframes ai-scroll-dot {
+      0% {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+      }
+
+      80% {
+        transform: translateX(-50%) translateY(14px);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateX(-50%) translateY(0);
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-scroll-cue {
+        display: none;
+      }
+    }
+
+    /* =============================================================
+       Section content over canvas (kept)
+       ============================================================= */
+    .features-2 .container,
+    #ai-stats .container,
+    #ai-technologies .container,
+    #ai-portfolio .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ---------- Portfolio section (kept) ---------- */
+    #ai-portfolio {
+      padding: 100px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 28px;
+      margin-top: 50px;
+    }
+
+    .portfolio-card {
+      position: relative;
+      background: linear-gradient(165deg, #ffffff 0%, #fafafa 100%);
+      border: 1px solid rgba(10, 14, 26, 0.06);
+      border-radius: 20px;
+      padding: 38px 32px;
+      overflow: hidden;
+      transition: transform 0.5s var(--ease-premium), box-shadow 0.5s var(--ease-premium);
+    }
+
+    .portfolio-card .pf-num {
+      font-family: 'Poppins', sans-serif;
+      font-size: 90px;
+      font-weight: 800;
+      line-height: 1;
+      color: transparent;
+      -webkit-text-stroke: 1.5px var(--ai-accent);
+      opacity: 0.18;
+      position: absolute;
+      top: 12px;
+      right: 18px;
+      transition: opacity 0.4s var(--ease-premium), transform 0.5s var(--ease-premium);
+      pointer-events: none;
+    }
+
+    .portfolio-card:hover .pf-num {
+      opacity: 0.5;
+      transform: scale(1.05) rotate(-3deg);
+    }
+
+    .portfolio-card .pf-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--ai-accent), var(--ai-accent-2));
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 26px;
+      margin-bottom: 22px;
+      box-shadow: 0 10px 30px -8px var(--ai-glow);
+      transition: transform 0.4s var(--ease-premium);
+    }
+
+    .portfolio-card:hover .pf-icon {
+      transform: rotate(-8deg) scale(1.08);
+    }
+
+    .portfolio-card h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: #1a1f3a;
+    }
+
+    .portfolio-card p {
+      color: #5a6178;
+      font-size: 14.5px;
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+
+    .portfolio-card .pf-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding-top: 18px;
+      border-top: 1px dashed rgba(255, 138, 0, 0.3);
+    }
+
+    .portfolio-card .pf-meta span {
+      font-size: 13px;
+      color: #1a1f3a;
+    }
+
+    .portfolio-card .pf-meta span b {
+      color: var(--ai-accent);
+      font-weight: 600;
+      margin-right: 6px;
+    }
+
+    /* Industries chips */
+    #ai-industries {
+      padding: 90px 0;
+      background: linear-gradient(180deg, #fafafa, #ffffff);
+    }
+
+    .industries-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 18px;
+      margin-top: 40px;
+    }
+
+    .industry-chip {
+      position: relative;
+      padding: 32px 22px;
+      background: #ffffff;
+      border: 1px solid rgba(10, 14, 26, 0.07);
+      border-radius: 16px;
+      text-align: center;
+      transition: all 0.4s var(--ease-premium);
+      cursor: default;
+      overflow: hidden;
+    }
+
+    .industry-chip::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, var(--ai-accent), var(--ai-accent-2));
+      opacity: 0;
+      transition: opacity 0.4s var(--ease-premium);
+      z-index: 0;
+    }
+
+    .industry-chip>* {
+      position: relative;
+      z-index: 1;
+    }
+
+    .industry-chip i {
+      font-size: 32px;
+      color: var(--ai-accent);
+      margin-bottom: 12px;
+      display: block;
+      transition: color 0.4s var(--ease-premium), transform 0.5s var(--ease-premium);
+    }
+
+    .industry-chip span {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      color: #1a1f3a;
+      transition: color 0.4s var(--ease-premium);
+    }
+
+    .industry-chip:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px -15px var(--ai-glow);
+      border-color: transparent;
+    }
+
+    .industry-chip:hover::before {
+      opacity: 1;
+    }
+
+    .industry-chip:hover i,
+    .industry-chip:hover span {
+      color: #fff;
+    }
+
+    .industry-chip:hover i {
+      transform: scale(1.15) rotate(-6deg);
+    }
+
+    /* Technologies section */
+    #ai-technologies {
+      padding: 100px 0;
+      background:
+        radial-gradient(ellipse at 20% 0%, var(--ai-glow-soft), transparent 50%),
+        radial-gradient(ellipse at 80% 100%, var(--ai-glow-soft), transparent 50%),
+        #0a0e1a;
+      color: #fff;
+    }
+
+    #ai-technologies::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255, 138, 0, 0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 138, 0, 0.06) 1px, transparent 1px);
+      background-size: 50px 50px;
+      mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+      -webkit-mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+      pointer-events: none;
+    }
+
+    #ai-technologies .section-title h2 {
+      color: #fff;
+    }
+
+    #ai-technologies .section-title p {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 50px;
+    }
+
+    .tech-card {
+      position: relative;
+      padding: 36px 28px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 138, 0, 0.18);
+      border-radius: 18px;
+      backdrop-filter: blur(8px);
+      transition: all 0.5s var(--ease-premium);
+      overflow: hidden;
+    }
+
+    .tech-card::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: conic-gradient(from 0deg,
+          transparent 70%,
+          var(--ai-accent) 80%,
+          transparent 90%);
+      opacity: 0;
+      animation: ai-rotate-slow 4s linear infinite;
+      transition: opacity 0.4s ease;
+    }
+
+    .tech-card:hover::before {
+      opacity: 0.4;
+    }
+
+    @keyframes ai-rotate-slow {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .tech-card .tech-icon {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, rgba(255, 138, 0, 0.2), rgba(255, 169, 64, 0.05));
+      border: 1px solid rgba(255, 138, 0, 0.3);
+      border-radius: 14px;
+      color: var(--ai-accent);
+      font-size: 28px;
+      margin-bottom: 20px;
+      transition: transform 0.4s var(--ease-premium);
+    }
+
+    .tech-card:hover .tech-icon {
+      transform: scale(1.1) rotate(-6deg);
+      box-shadow: 0 0 30px var(--ai-glow);
+    }
+
+    .tech-card h4 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 19px;
+      color: #fff;
+      margin-bottom: 10px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .tech-card p {
+      color: rgba(255, 255, 255, 0.65);
+      font-size: 14px;
+      line-height: 1.7;
+      margin: 0;
+      position: relative;
+      z-index: 2;
+    }
+
+    .tech-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--ai-accent);
+      background: rgba(255, 138, 0, 0.05);
+    }
+
+    /* Stats section */
+    #ai-stats {
+      padding: 90px 0;
+      background:
+        linear-gradient(135deg, rgba(255, 138, 0, 0.04) 0%, rgba(255, 169, 64, 0.02) 100%),
+        #ffffff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #ai-stats::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle at 1px 1px, rgba(255, 138, 0, 0.18) 1px, transparent 0);
+      background-size: 24px 24px;
+      mask-image: linear-gradient(to bottom, transparent, #000 50%, transparent);
+      -webkit-mask-image: linear-gradient(to bottom, transparent, #000 50%, transparent);
+      opacity: 0.6;
+      pointer-events: none;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+      margin-top: 50px;
+    }
+
+    .stat-card {
+      position: relative;
+      padding: 36px 24px;
+      background: #fff;
+      border: 1px solid rgba(10, 14, 26, 0.06);
+      border-radius: 18px;
+      text-align: center;
+      transition: all 0.45s var(--ease-premium);
+      overflow: hidden;
+    }
+
+    .stat-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--ai-accent), var(--ai-accent-2));
+      transform: translateX(-50%);
+      transition: width 0.5s var(--ease-premium);
+    }
+
+    .stat-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 22px 50px -18px var(--ai-glow);
+    }
+
+    .stat-card:hover::before {
+      width: 100%;
+    }
+
+    .stat-card .stat-num {
+      font-family: 'Poppins', sans-serif;
+      font-size: 42px;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--ai-accent), var(--ai-accent-deep));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+
+    .stat-card .stat-label {
+      font-family: 'Poppins', sans-serif;
+      color: #5a6178;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    .features-2 .feature-item {
+      transition: transform 0.4s var(--ease-premium), box-shadow 0.4s var(--ease-premium);
+    }
+
+    /* Section title flourish */
+    .section-title h2 {
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title h2::after {
+      content: "";
+      display: block;
+      width: 56px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--ai-accent), transparent);
+      margin: 14px auto 0;
+      border-radius: 3px;
+    }
+
+    /* =============================================================
+       ★★★  FOOTER — MEGA FOOTER (AHEX-STYLE, RIDEWAVE BRAND)  ★★★
+       ============================================================= */
+    .rw-mega-footer {
+      position: relative;
+      background: #ffffff;
+      padding: 70px 0 0;
+      border-top: 1px solid rgba(10, 14, 26, 0.06);
+      overflow: hidden;
+    }
+
+    .rw-mega-footer::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg,
+          transparent,
+          var(--ai-accent) 30%,
+          var(--ai-accent-2) 50%,
+          var(--ai-accent) 70%,
+          transparent);
+      background-size: 200% 100%;
+      animation: ai-shimmer 4s linear infinite;
+    }
+
+    .rw-mega-footer .row.gx-4 {
+      --bs-gutter-x: 1.5rem;
+    }
+
+    .rw-foot-brand {
+      padding-right: 12px;
+    }
+
+    .rw-foot-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      margin-bottom: 16px;
+    }
+
+    .rw-foot-logo .rw-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--ai-accent), var(--ai-accent-deep));
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: 22px;
+      box-shadow: 0 8px 20px -6px var(--ai-glow);
+    }
+
+    .rw-foot-logo .rw-name {
+      font-family: 'Poppins', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      color: #1a1f3a;
+      letter-spacing: -0.01em;
+    }
+
+    .rw-foot-logo .rw-name b {
+      color: var(--ai-accent);
+    }
+
+    .rw-foot-desc {
+      font-family: 'Poppins', sans-serif;
+      font-size: 13.5px;
+      line-height: 1.75;
+      color: #5a6178;
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    .rw-foot-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: rgba(255, 138, 0, 0.08);
+      color: var(--ai-accent);
+      border: 1px solid rgba(255, 138, 0, 0.2);
+      border-radius: 50px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      text-decoration: none;
+      transition: all 0.3s var(--ease-premium);
+      margin-bottom: 28px;
+    }
+
+    .rw-foot-cta:hover {
+      background: var(--ai-accent);
+      color: #fff;
+      transform: translateX(4px);
+    }
+
+    .rw-foot-cta i {
+      font-size: 14px;
+    }
+
+    .rw-foot-recent h6 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--ai-accent);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .rw-foot-recent h6::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: var(--ai-accent);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--ai-glow);
+    }
+
+    .rw-foot-recent ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .rw-foot-recent li {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 12px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 13px;
+      line-height: 1.55;
+      color: #4a5168;
+    }
+
+    .rw-foot-recent li::before {
+      content: "›";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--ai-accent);
+      font-weight: 700;
+    }
+
+    .rw-foot-recent li a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.25s ease;
+    }
+
+    .rw-foot-recent li a:hover {
+      color: var(--ai-accent);
+    }
+
+    /* Column headings (with icon, like AHEX) */
+    .rw-col-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--ai-accent);
+      margin-bottom: 18px;
+      padding-bottom: 0;
+    }
+
+    .rw-col-head i {
+      font-size: 18px;
+    }
+
+    /* Sub-heading (e.g. Frontend, Backend, AI) */
+    .rw-subhead {
+      font-family: 'Poppins', sans-serif;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #1a1f3a;
+      text-transform: none;
+      margin: 18px 0 10px;
+      letter-spacing: 0.1px;
+    }
+
+    .rw-subhead:first-child {
+      margin-top: 0;
+    }
+
+    /* Footer link list */
+    .rw-foot-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 4px;
+    }
+
+    .rw-foot-list li {
+      margin-bottom: 8px;
+    }
+
+    .rw-foot-list a {
+      font-family: 'Poppins', sans-serif;
+      font-size: 13px;
+      color: #5a6178;
+      text-decoration: none;
+      transition: color 0.25s ease, padding-left 0.25s ease;
+      display: inline-block;
+      position: relative;
+    }
+
+    .rw-foot-list a:hover {
+      color: var(--ai-accent);
+      padding-left: 4px;
+    }
+
+    .rw-foot-list a::before {
+      content: "";
+      position: absolute;
+      left: -8px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 1px;
+      background: var(--ai-accent);
+      transition: width 0.25s ease;
+    }
+
+    .rw-foot-list a:hover::before {
+      width: 4px;
+    }
+
+    /* Two-column tech splits inside Technology + Cloud columns */
+    .rw-tech-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 18px;
+    }
+
+    @media (max-width: 575.98px) {
+      .rw-tech-split {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Footer bottom bar */
+    .rw-foot-bottom {
+      margin-top: 50px;
+      padding: 22px 0;
+      border-top: 1px solid rgba(10, 14, 26, 0.06);
+      background: linear-gradient(180deg, transparent, rgba(255, 138, 0, 0.03));
+    }
+
+    .rw-foot-bottom .copyright {
+      font-family: 'Poppins', sans-serif;
+      font-size: 13px;
+      color: #5a6178;
+      margin: 0;
+    }
+
+    .rw-foot-bottom .copyright b {
+      color: #1a1f3a;
+    }
+
+    .rw-foot-bottom .legal-links {
+      display: flex;
+      gap: 22px;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+    }
+
+    .rw-foot-bottom .legal-links a {
+      font-family: 'Poppins', sans-serif;
+      font-size: 13px;
+      color: #5a6178;
+      text-decoration: none;
+      transition: color 0.25s ease;
+    }
+
+    .rw-foot-bottom .legal-links a:hover {
+      color: var(--ai-accent);
+    }
+
+    .rw-foot-social {
+      display: flex;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .rw-foot-social a {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: rgba(255, 138, 0, 0.08);
+      color: var(--ai-accent);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 16px;
+      transition: all 0.3s var(--ease-premium);
+    }
+
+    .rw-foot-social a:hover {
+      background: var(--ai-accent);
+      color: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px -4px var(--ai-glow);
+    }
+
+    @media (max-width: 991.98px) {
+      .rw-mega-footer {
+        padding-top: 50px;
+      }
+
+      .rw-foot-brand {
+        margin-bottom: 30px;
+      }
+
+      .rw-foot-bottom .legal-links {
+        justify-content: flex-start;
+        margin-top: 10px;
+      }
+    }
+
+    /* Reduced motion support */
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+
+      #ai-neural-canvas,
+      #hero-particles {
+        display: none;
+      }
+
+      .ai-cursor,
+      .ai-cursor-dot {
+        display: none;
+      }
+
+      .hero-grid-floor,
+      .hero-sphere,
+      .hero-scanline {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .portfolio-card .pf-num {
+        font-size: 60px;
+      }
+
+      .ai-orb-1 {
+        width: 240px;
+        height: 240px;
+      }
+
+      .ai-orb-2 {
+        width: 220px;
+        height: 220px;
+      }
+
+      .ai-orb-3 {
+        display: none;
+      }
+
+      .hero {
+        padding: 100px 0 60px;
+        min-height: auto;
+      }
+
+      .hero-strip {
+        gap: 18px;
+        padding: 18px;
+      }
+
+      .hero-strip-item {
+        min-width: 100px;
+      }
+
+      .hero-strip-num {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <!-- AI Scroll Progress -->
+  <div class="ai-scroll-progress" id="aiScrollProgress"></div>
+
+  <!-- AI Neural Network Canvas (site-wide) -->
+  <canvas id="ai-neural-canvas" aria-hidden="true"></canvas>
+
+  <!-- AI Cursor (hidden on touch) -->
+  <div class="ai-cursor" id="aiCursor" aria-hidden="true"></div>
+  <div class="ai-cursor-dot" id="aiCursorDot" aria-hidden="true"></div>
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div
+      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename"><b style="color: #ff8a00;">R</b>ide<b style="color: #ff8a00;">W</b>ave</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">What We Do</a></li>
+          <li><a href="#ai-portfolio">Portfolio</a></li>
+          <li><a href="#ai-technologies">Technologies</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted ai-magnetic" href="#contact">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- ============================================================
+         ★ HERO — UPGRADED AI-DRIVEN BACKGROUND ★
+         ============================================================ -->
+    <section id="hero" class="hero section">
+
+      <!-- Layer 0: perspective grid floor -->
+      <div class="hero-grid-floor" aria-hidden="true"></div>
+
+      <!-- Layer 0: hex pattern -->
+      <div class="hero-hex-pattern" aria-hidden="true"></div>
+
+      <!-- Layer 0: floating orbs -->
+      <div class="ai-orb ai-orb-1" aria-hidden="true"></div>
+      <div class="ai-orb ai-orb-2" aria-hidden="true"></div>
+      <div class="ai-orb ai-orb-3" aria-hidden="true"></div>
+
+      <!-- Layer 1: particle canvas -->
+      <canvas id="hero-particles" aria-hidden="true"></canvas>
+
+      <!-- Layer 1: sweeping scanline -->
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <!-- Layer 1: AI sphere (rotating wireframe) -->
+      <div class="hero-sphere" aria-hidden="true">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="sphereGrad" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#ff8a00" stop-opacity="0.4" />
+              <stop offset="60%" stop-color="#ff8a00" stop-opacity="0.05" />
+              <stop offset="100%" stop-color="#ff8a00" stop-opacity="0" />
+            </radialGradient>
+            <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ff8a00" />
+              <stop offset="100%" stop-color="#ffa940" />
+            </linearGradient>
+          </defs>
+          <circle cx="100" cy="100" r="95" fill="url(#sphereGrad)" />
+          <!-- meridians -->
+          <ellipse cx="100" cy="100" rx="95" ry="95" fill="none" stroke="url(#lineGrad)" stroke-width="0.8"
+            opacity="0.5" />
+          <ellipse cx="100" cy="100" rx="78" ry="95" fill="none" stroke="url(#lineGrad)" stroke-width="0.8"
+            opacity="0.45" />
+          <ellipse cx="100" cy="100" rx="55" ry="95" fill="none" stroke="url(#lineGrad)" stroke-width="0.8"
+            opacity="0.4" />
+          <ellipse cx="100" cy="100" rx="28" ry="95" fill="none" stroke="url(#lineGrad)" stroke-width="0.8"
+            opacity="0.35" />
+          <ellipse cx="100" cy="100" rx="0.5" ry="95" fill="none" stroke="url(#lineGrad)" stroke-width="0.8"
+            opacity="0.3" />
+          <!-- parallels -->
+          <ellipse cx="100" cy="100" rx="95" ry="78" fill="none" stroke="url(#lineGrad)" stroke-width="0.8"
+            opacity="0.45" />
+          <ellipse cx="100" cy="100" rx="95" ry="55" fill="none" stroke="url(#lineGrad)" stroke-width="0.8"
+            opacity="0.4" />
+          <ellipse cx="100" cy="100" rx="95" ry="28" fill="none" stroke="url(#lineGrad)" stroke-width="0.8"
+            opacity="0.35" />
+          <!-- nodes -->
+          <circle cx="100" cy="5" r="3" fill="#ff8a00">
+            <animate attributeName="r" values="2.5;4;2.5" dur="2.5s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="100" cy="195" r="3" fill="#ff8a00">
+            <animate attributeName="r" values="2.5;4;2.5" dur="2.5s" begin="0.5s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="5" cy="100" r="3" fill="#ffa940">
+            <animate attributeName="r" values="2.5;4;2.5" dur="2.5s" begin="1s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="195" cy="100" r="3" fill="#ffa940">
+            <animate attributeName="r" values="2.5;4;2.5" dur="2.5s" begin="1.5s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="100" cy="100" r="6" fill="#ff8a00" opacity="0.9">
+            <animate attributeName="r" values="5;9;5" dur="2s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite" />
+          </circle>
+        </svg>
+      </div>
+
+      <!-- Layer 1: floating tech chips -->
+      <div class="hero-chip hero-chip-1" aria-hidden="true"><i class="bi bi-cpu-fill"></i>AI Agents</div>
+      <div class="hero-chip hero-chip-2" aria-hidden="true"><i class="bi bi-cloud-fill"></i>Cloud Native</div>
+      <div class="hero-chip hero-chip-3" aria-hidden="true"><i class="bi bi-shield-lock-fill"></i>Cyber Security</div>
+      <div class="hero-chip hero-chip-4" aria-hidden="true"><i class="bi bi-lightning-charge-fill"></i>10K req/s</div>
+      <div class="hero-chip hero-chip-5" aria-hidden="true"><i class="bi bi-graph-up"></i>Predictive ML</div>
+      <div class="hero-chip hero-chip-6" aria-hidden="true"><i class="bi bi-diagram-3-fill"></i>Microservices</div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10" data-aos="zoom-in" data-aos-delay="200">
+            <div class="hero-content">
+
+              <div class="hero-badge" data-aos="fade-down" data-aos-delay="300">
+                <i class="bi bi-stars"></i>
+                <span>AI-Driven Digital Transformation • Engineering the Future</span>
+              </div>
+
+              <h1 class="hero-title" data-aos="fade-up" data-aos-delay="400">
+                Building
+                <span class="hero-rotating">
+                  <span class="hero-rotating-word" id="heroRotator">AI-Driven</span>
+                </span>
+                <br class="d-none d-md-block">
+                Digital Systems for the Future.<span class="ai-caret"></span>
+              </h1>
+
+              <p class="hero-description" data-aos="fade-up" data-aos-delay="500">
+                We help businesses automate operations, accelerate growth, and scale globally using
+                Artificial Intelligence, Cloud Infrastructure, Data Engineering, Intelligent Automation,
+                and secure software engineering.
+              </p>
+
+              <div class="hero-actions" data-aos="fade-up" data-aos-delay="600">
+                <a href="#contact" class="btn-primary ai-magnetic">
+                  <i class="bi bi-rocket-takeoff-fill"></i>
+                  Start Your AI Transformation
+                </a>
+                <a href="#ai-portfolio" class="btn-outline ai-magnetic">
+                  Explore Portfolio <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+
+              <div class="hero-strip" data-aos="fade-up" data-aos-delay="700">
+                <div class="hero-strip-item">
+                  <div class="hero-strip-num">99.95%</div>
+                  <div class="hero-strip-label">Uptime SLA</div>
+                </div>
+                <div class="hero-strip-item">
+                  <div class="hero-strip-num">10K+</div>
+                  <div class="hero-strip-label">Req / Second</div>
+                </div>
+                <div class="hero-strip-item">
+                  <div class="hero-strip-num">&lt;100ms</div>
+                  <div class="hero-strip-label">Latency</div>
+                </div>
+                <div class="hero-strip-item">
+                  <div class="hero-strip-num">24/7</div>
+                  <div class="hero-strip-label">Engineering</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="hero-scroll-cue" aria-hidden="true"></div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center gy-5">
+
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="image-section">
+              <div class="primary-image">
+                <img src="assets/img/about/about-14.webp" alt="AI digital transformation workspace" class="img-fluid">
+                <div class="experience-badge">
+                  <div class="badge-content">
+                    <span class="years">AI</span>
+                    <span class="text">First Engineering</span>
+                  </div>
+                </div>
+              </div>
+              <div class="image-grid">
+                <img src="assets/img/about/about-3.webp" alt="Cloud-native engineering" class="img-fluid grid-img">
+                <img src="assets/img/about/about-7.webp" alt="Distributed systems team" class="img-fluid grid-img">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="content-section">
+              <div class="section-intro">
+                <div class="company-badge">WHO WE ARE</div>
+                <h2>The Technology Partner Building Tomorrow's Intelligent Enterprise</h2>
+                <p class="intro-text">
+                  We are a next-generation technology services company focused on Artificial Intelligence,
+                  Automation, Cloud Computing, Cybersecurity, and Digital Transformation. Our mission is to
+                  help businesses evolve into intelligent enterprises through scalable, secure, and
+                  future-ready technology solutions. We combine innovation, engineering excellence, and
+                  strategic thinking to deliver impactful digital experiences for the modern world.
+                </p>
+              </div>
+
+              <div class="achievement-list">
+                <div class="achievement-item ai-pulse-host">
+                  <div class="achievement-icon">
+                    <i class="bi bi-rocket-takeoff-fill"></i>
+                  </div>
+                  <div class="achievement-content">
+                    <h4>Our Vision</h4>
+                    <p>To become a global leader in AI-powered digital transformation by building
+                      technologies that shape industries from 2025 to 2050 and beyond.</p>
+                  </div>
+                </div>
+                <div class="achievement-item ai-pulse-host">
+                  <div class="achievement-icon">
+                    <i class="bi bi-bullseye"></i>
+                  </div>
+                  <div class="achievement-content">
+                    <h4>Our Mission</h4>
+                    <p>Empower organizations with intelligent, scalable, and human-centered technology
+                      solutions that drive innovation, efficiency, and sustainable growth.</p>
+                  </div>
+                </div>
+                <div class="achievement-item ai-pulse-host">
+                  <div class="achievement-icon">
+                    <i class="bi bi-cpu-fill"></i>
+                  </div>
+                  <div class="achievement-content">
+                    <h4>Core Technical Strength</h4>
+                    <p>High-concurrency, distributed systems for finance, healthcare, and enterprise
+                      environments — Python microservices (FastAPI, Django), event-driven architectures,
+                      cloud-native systems on AWS / Azure / GCP, Docker, Kubernetes, Terraform, and
+                      compliance-focused engineering.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- What We Provide -->
+    <section id="features" class="features section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>What We Provide</h2>
+        <p>End-to-end intelligent systems — from AI agents and automation to cloud-native infrastructure,
+          data engineering, and enterprise-grade cybersecurity. Built for scale. Engineered for trust.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+
+          <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
+            <div class="features-content">
+              <h2>Intelligent Systems, Engineered for Scale</h2>
+              <p class="lead">
+                We design for scale, security, reliability, and performance. From AI agents that handle
+                customer conversations to cloud-native platforms processing thousands of requests per
+                second — every solution is built to grow with your business.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="features-image">
+              <img src="assets/img/features/features-4.webp" alt="AI engineering" class="img-fluid">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="features-grid" data-aos="fade-up" data-aos-delay="400">
+
+          <div class="feature-item ai-tilt ai-pulse-host" data-aos="zoom-in" data-aos-delay="100">
+            <div class="feature-icon">
+              <i class="bi bi-robot"></i>
+            </div>
+            <div class="feature-content">
+              <h4>AI &amp; Intelligent Automation</h4>
+              <p>AI Chatbots, AI Agents, Business Process Automation, AI Customer Support, Workflow
+                Automation, and Generative AI Solutions — purpose-built for measurable business impact.</p>
+            </div>
+          </div>
+
+          <div class="feature-item ai-tilt ai-pulse-host" data-aos="zoom-in" data-aos-delay="200">
+            <div class="feature-icon">
+              <i class="bi bi-code-slash"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Web &amp; Software Development</h4>
+              <p>Business websites, web applications, enterprise software, SaaS platforms, API
+                development, and high-performance mobile apps — engineered with modern, durable stacks.</p>
+            </div>
+          </div>
+
+          <div class="feature-item ai-tilt ai-pulse-host" data-aos="zoom-in" data-aos-delay="300">
+            <div class="feature-icon">
+              <i class="bi bi-cloud-arrow-up-fill"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Cloud &amp; DevOps</h4>
+              <p>AWS / Azure / GCP, cloud migration, Docker &amp; Kubernetes orchestration, CI/CD
+                automation, and infrastructure management — for resilient, cost-efficient operations.</p>
+            </div>
+          </div>
+
+          <div class="feature-item ai-tilt ai-pulse-host" data-aos="zoom-in" data-aos-delay="400">
+            <div class="feature-icon">
+              <i class="bi bi-bar-chart-line-fill"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Data &amp; Analytics</h4>
+              <p>Business intelligence, data engineering, real-time dashboards, predictive analytics,
+                and AI-powered data pipelines — turning raw data into decision-ready insight.</p>
+            </div>
+          </div>
+
+          <div class="feature-item ai-tilt ai-pulse-host" data-aos="zoom-in" data-aos-delay="500">
+            <div class="feature-icon">
+              <i class="bi bi-shield-lock-fill"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Cybersecurity</h4>
+              <p>Security audits, cloud security, threat monitoring, compliance solutions
+                (PCI-DSS / HIPAA / SOX), and risk management — security designed in, not bolted on.</p>
+            </div>
+          </div>
+
+          <div class="feature-item ai-tilt ai-pulse-host" data-aos="zoom-in" data-aos-delay="600">
+            <div class="feature-icon">
+              <i class="bi bi-diagram-3-fill"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Enterprise Modernization</h4>
+              <p>Legacy-to-cloud transformation, microservices architecture, and event-driven systems —
+                modernizing critical infrastructure with zero-disruption migration strategies.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /What We Provide -->
+
+    <!-- Why Choose Us -->
+    <section id="features-2" class="features-2 section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Why Choose Us</h2>
+        <p>An AI-first approach. Future-ready solutions. Enterprise-level engineering with a global delivery model.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="features-list row gy-4">
+          <div class="col-md-6">
+            <div class="feature-item ai-tilt ai-pulse-host" data-aos="fade-up" data-aos-delay="100">
+              <div class="feature-icon">
+                <i class="bi bi-cpu"></i>
+              </div>
+              <div class="feature-content">
+                <h4>AI-First Approach</h4>
+                <p>Every solution starts with the question: how can AI make this faster, smarter, and more
+                  reliable? We build with intelligence at the core, not as an afterthought.</p>
+                <div class="feature-tags">
+                  <span>Intelligent</span>
+                  <span>Future-ready</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="feature-item ai-tilt ai-pulse-host" data-aos="fade-up" data-aos-delay="200">
+              <div class="feature-icon">
+                <i class="bi bi-diagram-3"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Scalable Architecture</h4>
+                <p>Distributed, event-driven, cloud-native systems that scale from zero to ten thousand
+                  requests per second without rewriting a single service.</p>
+                <div class="feature-tags">
+                  <span>Distributed</span>
+                  <span>Cloud-native</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="feature-item ai-tilt ai-pulse-host" data-aos="fade-up" data-aos-delay="300">
+              <div class="feature-icon">
+                <i class="bi bi-shield-shaded"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Security by Design</h4>
+                <p>PCI-DSS, HIPAA, and SOX-ready engineering. Threat modelling, secret management, and
+                  zero-trust principles applied at every layer of the stack.</p>
+                <div class="feature-tags">
+                  <span>Compliance</span>
+                  <span>Zero-trust</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="feature-item ai-tilt ai-pulse-host" data-aos="fade-up" data-aos-delay="400">
+              <div class="feature-icon">
+                <i class="bi bi-globe2"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Global Delivery Model</h4>
+                <p>Engineering teams aligned across timezones, with continuous delivery pipelines,
+                  observability, and SLA-backed support — so your roadmap never stalls.</p>
+                <div class="feature-tags">
+                  <span>24/7 Delivery</span>
+                  <span>SLA-backed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="feature-item ai-tilt ai-pulse-host" data-aos="fade-up" data-aos-delay="500">
+              <div class="feature-icon">
+                <i class="bi bi-stack"></i>
+              </div>
+              <div class="feature-content">
+                <h4>Modern Technology Stack</h4>
+                <p>Python, FastAPI, Django, Node, React, Kubernetes, Terraform, Postgres, Kafka, Redis —
+                  and the right AI/ML tooling on top, chosen pragmatically for the problem.</p>
+                <div class="feature-tags">
+                  <span>Pragmatic</span>
+                  <span>Battle-tested</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="feature-item ai-tilt ai-pulse-host" data-aos="fade-up" data-aos-delay="600">
+              <div class="feature-icon">
+                <i class="bi bi-speedometer2"></i>
+              </div>
+              <div class="feature-content">
+                <h4>High-Performance Systems</h4>
+                <p>Sub-100ms latency targets. 99.95% uptime SLAs. Built for finance, healthcare, and
+                  enterprise workloads where every millisecond and every nine matters.</p>
+                <div class="feature-tags">
+                  <span>Sub-100ms</span>
+                  <span>99.95% Uptime</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Why Choose Us -->
+
+    <!-- Impressive Portfolio -->
+    <section id="ai-portfolio" class="section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Impressive Portfolio</h2>
+        <p>Real systems we have engineered for AI customer support, healthcare, retail analytics,
+          enterprise workflows, and cloud-native modernization.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="portfolio-grid">
+
+          <article class="portfolio-card ai-tilt" data-aos="fade-up" data-aos-delay="100">
+            <span class="pf-num">01</span>
+            <div class="pf-icon"><i class="bi bi-chat-square-dots-fill"></i></div>
+            <h3>AI Customer Support Platform</h3>
+            <p>A multilingual, AI-powered customer support system handling high-volume queries with
+              intelligent routing, automated responses, and graceful human escalation.</p>
+            <div class="pf-meta">
+              <span><b>Impact</b> Reduced support costs by 60%</span>
+              <span><b>Outcome</b> Faster resolution &amp; scalable operations</span>
+            </div>
+          </article>
+
+          <article class="portfolio-card ai-tilt" data-aos="fade-up" data-aos-delay="150">
+            <span class="pf-num">02</span>
+            <div class="pf-icon"><i class="bi bi-heart-pulse-fill"></i></div>
+            <h3>Intelligent Healthcare Assistant</h3>
+            <p>A secure digital healthcare assistant managing patient communication, appointment
+              reminders, and workflow automation for distributed care teams.</p>
+            <div class="pf-meta">
+              <span><b>Impact</b> Improved patient engagement &amp; efficiency</span>
+              <span><b>Outcome</b> Streamlined service delivery</span>
+            </div>
+          </article>
+
+          <article class="portfolio-card ai-tilt" data-aos="fade-up" data-aos-delay="200">
+            <span class="pf-num">03</span>
+            <div class="pf-icon"><i class="bi bi-graph-up-arrow"></i></div>
+            <h3>Smart Retail Analytics Dashboard</h3>
+            <p>A real-time analytics platform helping retail teams monitor sales performance, customer
+              trends, and forecasting signals — unified into one decision surface.</p>
+            <div class="pf-meta">
+              <span><b>Impact</b> Enabled predictive sales planning</span>
+              <span><b>Outcome</b> Better visibility &amp; decisions</span>
+            </div>
+          </article>
+
+          <article class="portfolio-card ai-tilt" data-aos="fade-up" data-aos-delay="250">
+            <span class="pf-num">04</span>
+            <div class="pf-icon"><i class="bi bi-diagram-2-fill"></i></div>
+            <h3>Enterprise Workflow Automation Engine</h3>
+            <p>An AI-integrated workflow platform automating internal approvals, task routing, and
+              business process execution across departments.</p>
+            <div class="pf-meta">
+              <span><b>Impact</b> Increased operational efficiency</span>
+              <span><b>Outcome</b> Faster execution, fewer errors</span>
+            </div>
+          </article>
+
+          <article class="portfolio-card ai-tilt" data-aos="fade-up" data-aos-delay="300">
+            <span class="pf-num">05</span>
+            <div class="pf-icon"><i class="bi bi-hdd-network-fill"></i></div>
+            <h3>Cloud-Native Microservices Platform</h3>
+            <p>A scalable backend architecture engineered for high traffic, low latency, and
+              enterprise-grade reliability using modern microservices patterns.</p>
+            <div class="pf-meta">
+              <span><b>Impact</b> 10,000+ requests/sec, sub-100ms latency</span>
+              <span><b>Outcome</b> High performance &amp; resilience</span>
+            </div>
+          </article>
+
+          <article class="portfolio-card ai-tilt" data-aos="fade-up" data-aos-delay="350">
+            <span class="pf-num">06</span>
+            <div class="pf-icon"><i class="bi bi-shield-fill-check"></i></div>
+            <h3>Secure Enterprise Modernization</h3>
+            <p>A legacy-to-cloud transformation initiative that migrated critical systems into a
+              secure, compliant, and elastic cloud environment.</p>
+            <div class="pf-meta">
+              <span><b>Impact</b> Improved agility &amp; reliability</span>
+              <span><b>Outcome</b> Compliance-aligned modern stack</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </section><!-- /Portfolio -->
+
+    <!-- Industries We Serve -->
+    <section id="ai-industries" class="section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Industries We Serve</h2>
+        <p>Domain depth across regulated and high-scale industries — from healthcare and finance to logistics and
+          government.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="industries-grid">
+          <div class="industry-chip" data-aos="zoom-in" data-aos-delay="50">
+            <i class="bi bi-heart-pulse"></i><span>Healthcare</span>
+          </div>
+          <div class="industry-chip" data-aos="zoom-in" data-aos-delay="100">
+            <i class="bi bi-mortarboard-fill"></i><span>Education</span>
+          </div>
+          <div class="industry-chip" data-aos="zoom-in" data-aos-delay="150">
+            <i class="bi bi-bank2"></i><span>Finance</span>
+          </div>
+          <div class="industry-chip" data-aos="zoom-in" data-aos-delay="200">
+            <i class="bi bi-bag-check-fill"></i><span>Ecommerce</span>
+          </div>
+          <div class="industry-chip" data-aos="zoom-in" data-aos-delay="250">
+            <i class="bi bi-truck"></i><span>Logistics</span>
+          </div>
+          <div class="industry-chip" data-aos="zoom-in" data-aos-delay="300">
+            <i class="bi bi-gear-wide-connected"></i><span>Manufacturing</span>
+          </div>
+          <div class="industry-chip" data-aos="zoom-in" data-aos-delay="350">
+            <i class="bi bi-house-door-fill"></i><span>Real Estate</span>
+          </div>
+          <div class="industry-chip" data-aos="zoom-in" data-aos-delay="400">
+            <i class="bi bi-building-fill"></i><span>Government</span>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Industries -->
+
+    <!-- Technologies Defining the Future -->
+    <section id="ai-technologies" class="section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Technologies Defining the Future</h2>
+        <p>The technologies we are betting on for the next decade — and engineering toward today.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="tech-grid">
+
+          <div class="tech-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="tech-icon"><i class="bi bi-cpu-fill"></i></div>
+            <h4>Artificial Intelligence</h4>
+            <p>Foundation models, fine-tuned LLMs, and applied ML — embedded into real business workflows.</p>
+          </div>
+
+          <div class="tech-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="tech-icon"><i class="bi bi-robot"></i></div>
+            <h4>AI Agents</h4>
+            <p>Autonomous, tool-using agents that plan, retrieve, and act — with human-in-the-loop guardrails.</p>
+          </div>
+
+          <div class="tech-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="tech-icon"><i class="bi bi-link-45deg"></i></div>
+            <h4>Blockchain &amp; Digital Trust</h4>
+            <p>Verifiable credentials, smart contracts, and trust fabrics for high-integrity systems.</p>
+          </div>
+
+          <div class="tech-card" data-aos="fade-up" data-aos-delay="350">
+            <div class="tech-icon"><i class="bi bi-router-fill"></i></div>
+            <h4>Robotics &amp; IoT</h4>
+            <p>Edge intelligence, sensor fabrics, and autonomous systems connecting the physical world to the cloud.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Technologies -->
+
+
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Frequently Asked</h2>
+        <p>Honest answers about how we engineer, deliver, and partner.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+
+            <div class="faq-container">
+
+              <div class="faq-item ai-pulse-host" data-aos="fade-up" data-aos-delay="200">
+                <div class="question-wrapper">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-patch-question"></i>
+                  </div>
+                  <div class="content-wrapper">
+                    <h3 class="question">What does an "AI-driven digital transformation" engagement look like?</h3>
+                    <div class="answer">
+                      <p>It starts with a discovery sprint — we map your business outcomes, current
+                        systems, and data assets, then propose where AI, automation, and cloud-native
+                        engineering create the highest leverage. From there, we deliver in iterative
+                        milestones, with measurable outcomes at each stage.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item ai-pulse-host" data-aos="fade-up" data-aos-delay="250">
+                <div class="question-wrapper">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-patch-question"></i>
+                  </div>
+                  <div class="content-wrapper">
+                    <h3 class="question">Which industries do you specialize in?</h3>
+                    <div class="answer">
+                      <p>Healthcare, finance, ecommerce, logistics, education, manufacturing, real estate,
+                        and government. Our engineering practices are particularly suited to regulated and
+                        high-scale environments where compliance, latency, and reliability matter.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item ai-pulse-host" data-aos="fade-up" data-aos-delay="300">
+                <div class="question-wrapper">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-patch-question"></i>
+                  </div>
+                  <div class="content-wrapper">
+                    <h3 class="question">How do you approach security and compliance?</h3>
+                    <div class="answer">
+                      <p>Security is engineered in from day one. We build to PCI-DSS, HIPAA, and SOX-ready
+                        standards by default, applying threat modelling, secret management, encryption at
+                        rest and in transit, and zero-trust principles at every layer.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item ai-pulse-host" data-aos="fade-up" data-aos-delay="350">
+                <div class="question-wrapper">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-patch-question"></i>
+                  </div>
+                  <div class="content-wrapper">
+                    <h3 class="question">Can you handle small startups as well as enterprise modernization?</h3>
+                    <div class="answer">
+                      <p>Yes. We work with early-stage SaaS startups all the way through to enterprise
+                        modernization programs. The same engineering principles — scalable, secure,
+                        observable, automated — apply at every size; we right-size the team and stack to
+                        your stage and budget.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item ai-pulse-host" data-aos="fade-up" data-aos-delay="400">
+                <div class="question-wrapper">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-patch-question"></i>
+                  </div>
+                  <div class="content-wrapper">
+                    <h3 class="question">What technologies do you typically use?</h3>
+                    <div class="answer">
+                      <p>Python (FastAPI / Django) and Node for services, React for frontends,
+                        Postgres / Kafka / Redis for the data layer, Docker &amp; Kubernetes orchestration,
+                        Terraform for infrastructure, and AWS / Azure / GCP at the cloud layer — paired
+                        with the right LLM, vector DB, and ML tooling for AI workloads.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item ai-pulse-host" data-aos="fade-up" data-aos-delay="450">
+                <div class="question-wrapper">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-patch-question"></i>
+                  </div>
+                  <div class="content-wrapper">
+                    <h3 class="question">How long does a typical project take?</h3>
+                    <div class="answer">
+                      <p>A focused MVP can ship in 4–8 weeks. A platform build typically runs 3–6 months.
+                        Enterprise modernization programs run in quarters, with continuous value delivered
+                        at every milestone — no big-bang launches.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /FAQ -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Start Your AI Transformation</h2>
+        <p>Talk to our engineering team. Whether you have a precise scope or just an ambition, we'll help
+          you map the path from idea to intelligent system.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-0">
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="contact-info-panel">
+              <div class="panel-content">
+                <div class="info-header">
+                  <h2>Ready to Build the Future?</h2>
+                  <p>Let's turn your roadmap into a working system. Reach out and we'll respond within
+                    one business day.</p>
+                </div>
+
+                <div class="info-grid">
+                  <div class="info-card ai-pulse-host" data-aos="slide-up" data-aos-delay="250">
+                    <div class="card-icon">
+                      <i class="bi bi-house-door"></i>
+                    </div>
+                    <div class="card-content">
+                      <h4>Visit Our Office</h4>
+                      <p>Hyderabad, India</p>
+                    </div>
+                  </div>
+
+                  <div class="info-card ai-pulse-host" data-aos="slide-up" data-aos-delay="300">
+                    <div class="card-icon">
+                      <i class="bi bi-chat-dots"></i>
+                    </div>
+                    <div class="card-content">
+                      <h4>Send Us a Message</h4>
+                      <p>info@ridewave.in</p>
+                    </div>
+                  </div>
+
+                  <div class="info-card ai-pulse-host" data-aos="slide-up" data-aos-delay="350">
+                    <div class="card-icon">
+                      <i class="bi bi-headset"></i>
+                    </div>
+                    <div class="card-content">
+                      <h4>Call Us Directly</h4>
+                      <p>+91 97046 74140 <br> +91 80193 87674</p>
+                    </div>
+                  </div>
+
+                  <div class="info-card ai-pulse-host" data-aos="slide-up" data-aos-delay="400">
+                    <div class="card-icon">
+                      <i class="bi bi-calendar3"></i>
+                    </div>
+                    <div class="card-content">
+                      <h4>Business Hours</h4>
+                      <p>Mon–Fri: 9 AM – 6 PM</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="social-section" data-aos="fade-in" data-aos-delay="450">
+                  <h5>Follow Our Journey</h5>
+                  <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="slide-left" data-aos-delay="300">
+            <div class="contact-form-wrapper">
+              <div class="form-header">
+                <h3>Drop Us a Message</h3>
+                <div class="header-line"></div>
+              </div>
+
+              <form action="forms/contact.php" method="post" class="php-email-form modern-form">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="fullName" placeholder="Full Name" required>
+                </div>
+
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="emailAddress" placeholder="Email Address"
+                    required>
+                </div>
+
+                <div class="form-group">
+                  <input type="tel" class="form-control" name="phone" id="phoneNumber" placeholder="Phone Number">
+                </div>
+
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="emailSubject"
+                    placeholder="What can we help you build?" required>
+                </div>
+
+                <div class="form-group">
+                  <textarea class="form-control" name="message" id="messageContent" rows="6"
+                    placeholder="Tell us about your goals, your stack, or where you want AI to make an impact..."
+                    required></textarea>
+                </div>
+
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+
+                <button type="submit" class="submit-btn ai-magnetic">
+                  <span class="btn-text"><a href="mailto:info@ridewave.in"
+                      style="color: white; text-decoration: none;">Send Message</a></span>
+                  <span class="btn-icon">
+                    <i class="bi bi-arrow-right"></i>
+                  </span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Contact -->
+
+  </main>
+
+  <!-- ============================================================
+       ★ FOOTER — MEGA FOOTER (RIDEWAVE BRAND) ★
+       ============================================================ -->
+  <footer id="footer" class="rw-mega-footer">
+
+    <div class="container">
+
+      <div class="row gx-4 gy-5">
+
+        <!-- Brand + Description + Recent Posts -->
+        <div class="col-lg-3 col-md-6">
+          <div class="rw-foot-brand">
+            <a href="index.html" class="rw-foot-logo">
+              <h1 class="sitename"><b style="color: #ff8a00;">R</b>ide<b style="color: #ff8a00;">W</b>ave</h1>
+            </a>
+            <p class="rw-foot-desc">
+              Building AI-powered digital experiences,
+              scalable cloud platforms, enterprise SaaS
+              products, and modern mobile applications
+              for startups and enterprises worldwide.
+            </p>
+
+
+          </div>
+        </div>
+
+        <!-- Company + Industry -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="rw-col-head"><i class="bi bi-building-fill"></i> Company</h5>
+          <ul class="rw-foot-list">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#about">Vision &amp; Mission</a></li>
+            <li><a href="#about">Engagement Model</a></li>
+            <li><a href="#features">Development Process</a></li>
+            <li><a href="#ai-portfolio">Case Studies</a></li>
+            <li><a href="#contact">Careers</a></li>
+            <li><a href="#contact">Partners</a></li>
+            <li><a href="#faq">FAQs</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <h5 class="rw-col-head" style="margin-top:26px;"><i class="bi bi-grid-fill"></i> Industry</h5>
+          <ul class="rw-foot-list">
+            <li><a href="#ai-industries">Healthcare</a></li>
+            <li><a href="#ai-industries">Finance</a></li>
+            <li><a href="#ai-industries">Education</a></li>
+            <li><a href="#ai-industries">Ecommerce</a></li>
+            <li><a href="#ai-industries">Logistics</a></li>
+            <li><a href="#ai-industries">Manufacturing</a></li>
+            <li><a href="#ai-industries">Real Estate</a></li>
+            <li><a href="#ai-industries">Government</a></li>
+            <li><a href="#ai-industries">Startups</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5 class="rw-col-head"><i class="bi bi-tools"></i> Services</h5>
+          <ul class="rw-foot-list">
+            <li><a href="#features">AI &amp; Intelligent Automation</a></li>
+            <li><a href="#features">AI Agents &amp; Chatbots</a></li>
+            <li><a href="#features">Generative AI Solutions</a></li>
+            <li><a href="#features">Custom Web Application Development</a></li>
+            <li><a href="#features">Enterprise SaaS Platforms</a></li>
+            <li><a href="#features">Mobile App Development</a></li>
+            <li><a href="#features">API &amp; Microservices Engineering</a></li>
+            <li><a href="#features">Cloud &amp; DevOps Services</a></li>
+            <li><a href="#features">Data Engineering &amp; Analytics</a></li>
+            <li><a href="#features">Predictive ML &amp; BI Dashboards</a></li>
+            <li><a href="#features">Cybersecurity &amp; Compliance</a></li>
+            <li><a href="#features">Enterprise Modernization</a></li>
+            <li><a href="#features">UI/UX Design</a></li>
+            <li><a href="#features">QA &amp; Test Automation</a></li>
+            <li><a href="#features">Maintenance &amp; Support</a></li>
+            <li><a href="#features">Dedicated Engineering Teams</a></li>
+          </ul>
+        </div>
+
+        <!-- Technology stack -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="rw-col-head"><i class="bi bi-cpu-fill"></i> Technology</h5>
+
+          <div class="rw-subhead">Frontend</div>
+          <ul class="rw-foot-list">
+            <li><a href="#">React</a></li>
+            <li><a href="#">Next.js</a></li>
+            <li><a href="#">Vue.js</a></li>
+            <li><a href="#">TypeScript</a></li>
+            <li><a href="#">Tailwind CSS</a></li>
+          </ul>
+
+          <div class="rw-subhead">Backend</div>
+          <ul class="rw-foot-list">
+            <li><a href="#">Python</a></li>
+            <li><a href="#">FastAPI</a></li>
+            <li><a href="#">Django</a></li>
+            <li><a href="#">Node.js</a></li>
+            <li><a href="#">Go</a></li>
+          </ul>
+
+          <div class="rw-subhead">AI / ML</div>
+          <ul class="rw-foot-list">
+            <li><a href="#">OpenAI</a></li>
+            <li><a href="#">Anthropic Claude</a></li>
+            <li><a href="#">Google Gemini</a></li>
+            <li><a href="#">LangChain</a></li>
+            <li><a href="#">Hugging Face</a></li>
+            <li><a href="#">Vector DBs</a></li>
+          </ul>
+        </div>
+
+        <!-- Cloud + Database + Emerging -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5 class="rw-col-head"><i class="bi bi-cloud-fill"></i> Cloud &amp; Data</h5>
+
+          <div class="rw-subhead">Cloud</div>
+          <ul class="rw-foot-list">
+            <li><a href="#">AWS</a></li>
+            <li><a href="#">Microsoft Azure</a></li>
+            <li><a href="#">Google Cloud</a></li>
+            <li><a href="#">Digital Ocean</a></li>
+            <li><a href="#">Vercel</a></li>
+          </ul>
+
+          <div class="rw-subhead">DevOps</div>
+          <ul class="rw-foot-list">
+            <li><a href="#">Docker</a></li>
+            <li><a href="#">Kubernetes</a></li>
+            <li><a href="#">Terraform</a></li>
+            <li><a href="#">GitHub Actions</a></li>
+          </ul>
+
+          <div class="rw-subhead">Database</div>
+          <ul class="rw-foot-list">
+            <li><a href="#">MySQL</a></li>
+            <li><a href="#">PostgreSQL</a></li>
+            <li><a href="#">MongoDB</a></li>
+            <li><a href="#">Redis</a></li>
+            <li><a href="#">Apache Kafka</a></li>
+            <li><a href="#">Elasticsearch</a></li>
+          </ul>
+
+          <div class="rw-subhead">Emerging Tech</div>
+          <ul class="rw-foot-list">
+            <li><a href="#ai-technologies">Generative AI</a></li>
+            <li><a href="#ai-technologies">Autonomous Agents</a></li>
+            <li><a href="#ai-technologies">Blockchain</a></li>
+            <li><a href="#ai-technologies">IoT &amp; Edge</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="rw-foot-bottom">
+      <div class="container">
+        <div class="row align-items-center gy-3">
+          <div class="col-lg-6">
+            <p class="copyright">
+              © 2026 <b>RideWave Technologies Private Limited.</b> All rights reserved
+            </p>
+
+          </div>
+          <div class="col-lg-6">
+            <div class="legal-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Cookie Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendors/php-email-form/validate.js"></script>
+  <script src="vendors/aos/aos.js"></script>
+  <script src="vendors/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>
