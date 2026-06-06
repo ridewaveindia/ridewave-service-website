@@ -9,9 +9,7 @@
   <meta name="description"
     content="RideWave Technologies transforms ideas into scalable digital products through Full Stack Development, AI Engineering, Cloud Infrastructure, DevOps, SaaS Development, UI/UX Design, Mobile Apps, Cybersecurity, and Intelligent Automation.">
   <meta name="keywords"
-    content="Full Stack Development, Full Stack Developer, MERN Stack Development, MEAN Stack Development, React Development, Next.js Development, Vue.js Development, Angular Development, Frontend Development, Backend Development, Node.js Development, Python Development, Django Development, FastAPI Development, Java Development, Spring Boot Development, PHP Development, Laravel Development, Mobile App Development, Flutter Development, Android App Development, iOS App Development, Web Application Development, SaaS Development, Custom Software Development, AI Development, Artificial Intelligence Solutions, AI Agents, AI Chatbots, Machine Learning Solutions, Generative AI Development, Automation Services, Cloud Computing, AWS Development, Azure Solutions, Google Cloud Platform, DevOps Services, Docker, Kubernetes, Terraform, CI/CD Pipeline, Cloud Native Applications, Cybersecurity Solutions, Data Engineering, API Development, Microservices Architecture, Enterprise Software Development, Startup Technology Partner, UI UX Design, Scalable Systems, Digital Transformation, RideWave Technologies">
-
-
+    content="Full Stack Development, AI Development, Cloud Computing, DevOps Services, SaaS Development, Mobile App Development, Cybersecurity Solutions, Digital Transformation, RideWave Technologies">
 
   <meta name="author" content="RideWave Technologies">
   <meta name="robots" content="index, follow">
@@ -92,13 +90,8 @@
     }
 
     @keyframes ai-shimmer {
-      0% {
-        background-position: 0% 50%;
-      }
-
-      100% {
-        background-position: 200% 50%;
-      }
+      0% { background-position: 0% 50%; }
+      100% { background-position: 200% 50%; }
     }
 
     /* ---------- 2. Neural network canvas background (site-wide) ---------- */
@@ -115,71 +108,12 @@
     .hero,
     .features-2,
     #ai-stats,
-    #ai-technologies {
+    #ai-technologies,
+    #work {
       position: relative;
     }
 
-    /* ---------- 3. Custom AI cursor (desktop only) ---------- */
-    @media (hover: hover) and (pointer: fine) {
-
-      body.ai-cursor-active,
-      body.ai-cursor-active * {
-        cursor: none !important;
-      }
-
-      .ai-cursor {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 36px;
-        height: 36px;
-        border: 1.5px solid var(--ai-accent);
-        border-radius: 50%;
-        pointer-events: none;
-        transform: translate(-50%, -50%);
-        transition: width 0.25s var(--ease-premium),
-          height 0.25s var(--ease-premium),
-          border-color 0.25s var(--ease-premium),
-          background 0.25s var(--ease-premium);
-        z-index: 99998;
-        mix-blend-mode: difference;
-      }
-
-      .ai-cursor-dot {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 6px;
-        height: 6px;
-        background: var(--ai-accent);
-        border-radius: 50%;
-        pointer-events: none;
-        transform: translate(-50%, -50%);
-        z-index: 99999;
-        box-shadow: 0 0 12px var(--ai-glow);
-      }
-
-      .ai-cursor.is-hover {
-        width: 64px;
-        height: 64px;
-        background: var(--ai-glow-soft);
-        border-color: var(--ai-accent-2);
-      }
-
-      .ai-cursor.is-click {
-        width: 24px;
-        height: 24px;
-      }
-    }
-
-    @media (hover: none),
-    (pointer: coarse) {
-
-      .ai-cursor,
-      .ai-cursor-dot {
-        display: none !important;
-      }
-    }
+   
 
     /* ---------- 4. Premium card hover ---------- */
     .ai-tilt {
@@ -234,9 +168,7 @@
       animation: ai-rotate-angle 4s linear infinite;
     }
 
-    .ai-tilt:hover::after {
-      opacity: 1;
-    }
+    .ai-tilt:hover::after { opacity: 1; }
 
     @property --angle {
       syntax: '<angle>';
@@ -245,9 +177,7 @@
     }
 
     @keyframes ai-rotate-angle {
-      to {
-        --angle: 360deg;
-      }
+      to { --angle: 360deg; }
     }
 
     .ai-tilt:hover {
@@ -296,15 +226,8 @@
     }
 
     @keyframes ai-ring {
-      0% {
-        transform: scale(0.85);
-        opacity: 0.9;
-      }
-
-      100% {
-        transform: scale(1.6);
-        opacity: 0;
-      }
+      0% { transform: scale(0.85); opacity: 0.9; }
+      100% { transform: scale(1.6); opacity: 0; }
     }
 
     /* ---------- 6. Magnetic button hover ---------- */
@@ -329,14 +252,8 @@
       pointer-events: none;
     }
 
-    .ai-magnetic:hover {
-      box-shadow: 0 14px 40px -10px var(--ai-glow);
-    }
-
-    .ai-magnetic:hover::after {
-      width: 320px;
-      height: 320px;
-    }
+    .ai-magnetic:hover { box-shadow: 0 14px 40px -10px var(--ai-glow); }
+    .ai-magnetic:hover::after { width: 320px; height: 320px; }
 
     /* ---------- 7. Animated gradient text ---------- */
     .ai-grad-text {
@@ -349,13 +266,8 @@
     }
 
     @keyframes ai-text-flow {
-      0% {
-        background-position: 0% 50%;
-      }
-
-      100% {
-        background-position: 250% 50%;
-      }
+      0% { background-position: 0% 50%; }
+      100% { background-position: 250% 50%; }
     }
 
     .header.scrolled {
@@ -381,7 +293,6 @@
       isolation: isolate;
     }
 
-    /* 1. Perspective grid floor */
     .hero-grid-floor {
       position: absolute;
       bottom: 0;
@@ -402,16 +313,10 @@
     }
 
     @keyframes ai-grid-scroll {
-      from {
-        background-position: 0 0;
-      }
-
-      to {
-        background-position: 0 60px;
-      }
+      from { background-position: 0 0; }
+      to { background-position: 0 60px; }
     }
 
-    /* 2. Hexagonal pattern overlay */
     .hero-hex-pattern {
       position: absolute;
       inset: 0;
@@ -422,7 +327,6 @@
       z-index: 0;
     }
 
-    /* 3. Floating orbs (kept) */
     .ai-orb {
       position: absolute;
       border-radius: 50%;
@@ -461,42 +365,20 @@
     }
 
     @keyframes ai-float-1 {
-
-      0%,
-      100% {
-        transform: translate(0, 0) scale(1);
-      }
-
-      50% {
-        transform: translate(40px, 30px) scale(1.1);
-      }
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(40px, 30px) scale(1.1); }
     }
 
     @keyframes ai-float-2 {
-
-      0%,
-      100% {
-        transform: translate(0, 0) scale(1);
-      }
-
-      50% {
-        transform: translate(-30px, -40px) scale(1.15);
-      }
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(-30px, -40px) scale(1.15); }
     }
 
     @keyframes ai-float-3 {
-
-      0%,
-      100% {
-        transform: translate(-50%, -50%) scale(1);
-      }
-
-      50% {
-        transform: translate(-30%, -60%) scale(1.2);
-      }
+      0%, 100% { transform: translate(-50%, -50%) scale(1); }
+      50% { transform: translate(-30%, -60%) scale(1.2); }
     }
 
-    /* 4. Hero-specific dense particle canvas */
     #hero-particles {
       position: absolute;
       inset: 0;
@@ -507,7 +389,6 @@
       opacity: 0.5;
     }
 
-    /* 5. Animated AI sphere (top-right) */
     .hero-sphere {
       position: absolute;
       top: 12%;
@@ -527,26 +408,14 @@
     }
 
     @keyframes ai-sphere-rotate {
-      from {
-        transform: rotate(0deg);
-      }
-
-      to {
-        transform: rotate(360deg);
-      }
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
     }
 
     @media (max-width: 992px) {
-      .hero-sphere {
-        width: 180px;
-        height: 180px;
-        opacity: 0.4;
-        top: 5%;
-        right: -3%;
-      }
+      .hero-sphere { width: 180px; height: 180px; opacity: 0.4; top: 5%; right: -3%; }
     }
 
-    /* 6. Floating AI tech chips */
     .hero-chip {
       position: absolute;
       padding: 8px 16px;
@@ -566,73 +435,24 @@
       animation: ai-chip-float 8s ease-in-out infinite;
     }
 
-    .hero-chip i {
-      color: var(--ai-accent);
-      margin-right: 6px;
-    }
-
-    .hero-chip-1 {
-      top: 22%;
-      left: 4%;
-      animation-delay: 0s;
-    }
-
-    .hero-chip-2 {
-      top: 70%;
-      left: 8%;
-      animation-delay: 1.5s;
-    }
-
-    .hero-chip-3 {
-      top: 18%;
-      right: 4%;
-      animation-delay: 3s;
-    }
-
-    .hero-chip-4 {
-      top: 75%;
-      right: 6%;
-      animation-delay: 4.5s;
-    }
-
-    .hero-chip-5 {
-      top: 45%;
-      left: 2%;
-      animation-delay: 2s;
-    }
-
-    .hero-chip-6 {
-      top: 50%;
-      right: 2%;
-      animation-delay: 5.5s;
-    }
+    .hero-chip i { color: var(--ai-accent); margin-right: 6px; }
+    .hero-chip-1 { top: 22%; left: 4%; animation-delay: 0s; }
+    .hero-chip-2 { top: 70%; left: 8%; animation-delay: 1.5s; }
+    .hero-chip-3 { top: 18%; right: 4%; animation-delay: 3s; }
+    .hero-chip-4 { top: 75%; right: 6%; animation-delay: 4.5s; }
+    .hero-chip-5 { top: 45%; left: 2%; animation-delay: 2s; }
+    .hero-chip-6 { top: 50%; right: 2%; animation-delay: 5.5s; }
 
     @keyframes ai-chip-float {
-
-      0%,
-      100% {
-        transform: translateY(0) rotate(0deg);
-      }
-
-      50% {
-        transform: translateY(-12px) rotate(1deg);
-      }
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-12px) rotate(1deg); }
     }
 
     @media (max-width: 992px) {
-      .hero-chip {
-        display: none;
-      }
-
-      .hero-chip-1,
-      .hero-chip-3 {
-        display: block;
-        font-size: 11px;
-        padding: 6px 10px;
-      }
+      .hero-chip { display: none; }
+      .hero-chip-1, .hero-chip-3 { display: block; font-size: 11px; padding: 6px 10px; }
     }
 
-    /* 7. Scanline / pulse beam */
     .hero-scanline {
       position: absolute;
       top: 0;
@@ -651,28 +471,13 @@
     }
 
     @keyframes ai-scanline {
-      0% {
-        left: -100%;
-      }
-
-      55% {
-        left: 100%;
-      }
-
-      100% {
-        left: 100%;
-      }
+      0% { left: -100%; }
+      55% { left: 100%; }
+      100% { left: 100%; }
     }
 
-    /* 8. Hero content layout */
-    .hero .container {
-      position: relative;
-      z-index: 5;
-    }
-
-    .hero-content {
-      text-align: center;
-    }
+    .hero .container { position: relative; z-index: 5; }
+    .hero-content { text-align: center; }
 
     .hero-badge {
       position: relative;
@@ -694,10 +499,7 @@
       box-shadow: 0 8px 32px -8px rgba(255, 138, 0, 0.2);
     }
 
-    .hero-badge i {
-      color: var(--ai-accent);
-      font-size: 16px;
-    }
+    .hero-badge i { color: var(--ai-accent); font-size: 16px; }
 
     .hero-badge::after {
       content: "";
@@ -711,17 +513,9 @@
     }
 
     @keyframes ai-badge-sweep {
-      0% {
-        left: -100%;
-      }
-
-      60% {
-        left: 200%;
-      }
-
-      100% {
-        left: 200%;
-      }
+      0% { left: -100%; }
+      60% { left: 200%; }
+      100% { left: 200%; }
     }
 
     .hero-title {
@@ -753,10 +547,7 @@
     }
 
     @media (max-width: 768px) {
-      .hero-rotating {
-        min-width: 0;
-        display: inline;
-      }
+      .hero-rotating { min-width: 0; display: inline; }
     }
 
     .ai-caret {
@@ -772,9 +563,7 @@
     }
 
     @keyframes ai-blink {
-      50% {
-        opacity: 0;
-      }
+      50% { opacity: 0; }
     }
 
     .hero-description {
@@ -819,9 +608,7 @@
       transition: all 0.35s var(--ease-premium);
     }
 
-    .hero-actions .btn-primary:hover {
-      box-shadow: 0 18px 40px -8px var(--ai-glow);
-    }
+    .hero-actions .btn-primary:hover { box-shadow: 0 18px 40px -8px var(--ai-glow); }
 
     .hero-actions .btn-outline {
       display: inline-flex;
@@ -845,7 +632,6 @@
       box-shadow: 0 12px 30px -8px var(--ai-glow);
     }
 
-    /* Hero stat-strip below CTAs */
     .hero-strip {
       display: flex;
       justify-content: center;
@@ -862,10 +648,7 @@
       box-shadow: 0 10px 40px -12px rgba(255, 138, 0, 0.15);
     }
 
-    .hero-strip-item {
-      text-align: center;
-      min-width: 130px;
-    }
+    .hero-strip-item { text-align: center; min-width: 130px; }
 
     .hero-strip-num {
       font-family: 'Poppins', sans-serif;
@@ -888,7 +671,6 @@
       text-transform: uppercase;
     }
 
-    /* Down-scroll indicator */
     .hero-scroll-cue {
       position: absolute;
       bottom: 30px;
@@ -916,45 +698,23 @@
     }
 
     @keyframes ai-scroll-dot {
-      0% {
-        transform: translateX(-50%) translateY(0);
-        opacity: 1;
-      }
-
-      80% {
-        transform: translateX(-50%) translateY(14px);
-        opacity: 0;
-      }
-
-      100% {
-        transform: translateX(-50%) translateY(0);
-        opacity: 0;
-      }
+      0% { transform: translateX(-50%) translateY(0); opacity: 1; }
+      80% { transform: translateX(-50%) translateY(14px); opacity: 0; }
+      100% { transform: translateX(-50%) translateY(0); opacity: 0; }
     }
 
     @media (max-width: 768px) {
-      .hero-scroll-cue {
-        display: none;
-      }
+      .hero-scroll-cue { display: none; }
     }
 
-    /* =============================================================
-       Section content over canvas (kept)
-       ============================================================= */
     .features-2 .container,
     #ai-stats .container,
     #ai-technologies .container,
-    #ai-portfolio .container {
-      position: relative;
-      z-index: 2;
-    }
+    #ai-portfolio .container,
+    #work .container { position: relative; z-index: 2; }
 
-    /* ---------- Portfolio section (kept) ---------- */
-    #ai-portfolio {
-      padding: 100px 0;
-      position: relative;
-      overflow: hidden;
-    }
+    /* ---------- Portfolio section ---------- */
+    #ai-portfolio { padding: 100px 0; position: relative; overflow: hidden; }
 
     .portfolio-grid {
       display: grid;
@@ -988,10 +748,7 @@
       pointer-events: none;
     }
 
-    .portfolio-card:hover .pf-num {
-      opacity: 0.5;
-      transform: scale(1.05) rotate(-3deg);
-    }
+    .portfolio-card:hover .pf-num { opacity: 0.5; transform: scale(1.05) rotate(-3deg); }
 
     .portfolio-card .pf-icon {
       width: 56px;
@@ -1008,9 +765,7 @@
       transition: transform 0.4s var(--ease-premium);
     }
 
-    .portfolio-card:hover .pf-icon {
-      transform: rotate(-8deg) scale(1.08);
-    }
+    .portfolio-card:hover .pf-icon { transform: rotate(-8deg) scale(1.08); }
 
     .portfolio-card h3 {
       font-family: 'Poppins', sans-serif;
@@ -1020,12 +775,7 @@
       color: #1a1f3a;
     }
 
-    .portfolio-card p {
-      color: #5a6178;
-      font-size: 14.5px;
-      line-height: 1.7;
-      margin-bottom: 18px;
-    }
+    .portfolio-card p { color: #5a6178; font-size: 14.5px; line-height: 1.7; margin-bottom: 18px; }
 
     .portfolio-card .pf-meta {
       display: flex;
@@ -1035,22 +785,11 @@
       border-top: 1px dashed rgba(255, 138, 0, 0.3);
     }
 
-    .portfolio-card .pf-meta span {
-      font-size: 13px;
-      color: #1a1f3a;
-    }
-
-    .portfolio-card .pf-meta span b {
-      color: var(--ai-accent);
-      font-weight: 600;
-      margin-right: 6px;
-    }
+    .portfolio-card .pf-meta span { font-size: 13px; color: #1a1f3a; }
+    .portfolio-card .pf-meta span b { color: var(--ai-accent); font-weight: 600; margin-right: 6px; }
 
     /* Industries chips */
-    #ai-industries {
-      padding: 90px 0;
-      background: linear-gradient(180deg, #fafafa, #ffffff);
-    }
+    #ai-industries { padding: 90px 0; background: linear-gradient(180deg, #fafafa, #ffffff); }
 
     .industries-grid {
       display: grid;
@@ -1081,10 +820,7 @@
       z-index: 0;
     }
 
-    .industry-chip>* {
-      position: relative;
-      z-index: 1;
-    }
+    .industry-chip>* { position: relative; z-index: 1; }
 
     .industry-chip i {
       font-size: 32px;
@@ -1102,24 +838,10 @@
       transition: color 0.4s var(--ease-premium);
     }
 
-    .industry-chip:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 40px -15px var(--ai-glow);
-      border-color: transparent;
-    }
-
-    .industry-chip:hover::before {
-      opacity: 1;
-    }
-
-    .industry-chip:hover i,
-    .industry-chip:hover span {
-      color: #fff;
-    }
-
-    .industry-chip:hover i {
-      transform: scale(1.15) rotate(-6deg);
-    }
+    .industry-chip:hover { transform: translateY(-6px); box-shadow: 0 20px 40px -15px var(--ai-glow); border-color: transparent; }
+    .industry-chip:hover::before { opacity: 1; }
+    .industry-chip:hover i, .industry-chip:hover span { color: #fff; }
+    .industry-chip:hover i { transform: scale(1.15) rotate(-6deg); }
 
     /* Technologies section */
     #ai-technologies {
@@ -1144,13 +866,8 @@
       pointer-events: none;
     }
 
-    #ai-technologies .section-title h2 {
-      color: #fff;
-    }
-
-    #ai-technologies .section-title p {
-      color: rgba(255, 255, 255, 0.7);
-    }
+    #ai-technologies .section-title h2 { color: #fff; }
+    #ai-technologies .section-title p { color: rgba(255, 255, 255, 0.7); }
 
     .tech-grid {
       display: grid;
@@ -1177,24 +894,15 @@
       left: -50%;
       width: 200%;
       height: 200%;
-      background: conic-gradient(from 0deg,
-          transparent 70%,
-          var(--ai-accent) 80%,
-          transparent 90%);
+      background: conic-gradient(from 0deg, transparent 70%, var(--ai-accent) 80%, transparent 90%);
       opacity: 0;
       animation: ai-rotate-slow 4s linear infinite;
       transition: opacity 0.4s ease;
     }
 
-    .tech-card:hover::before {
-      opacity: 0.4;
-    }
+    .tech-card:hover::before { opacity: 0.4; }
 
-    @keyframes ai-rotate-slow {
-      to {
-        transform: rotate(360deg);
-      }
-    }
+    @keyframes ai-rotate-slow { to { transform: rotate(360deg); } }
 
     .tech-card .tech-icon {
       width: 60px;
@@ -1211,10 +919,7 @@
       transition: transform 0.4s var(--ease-premium);
     }
 
-    .tech-card:hover .tech-icon {
-      transform: scale(1.1) rotate(-6deg);
-      box-shadow: 0 0 30px var(--ai-glow);
-    }
+    .tech-card:hover .tech-icon { transform: scale(1.1) rotate(-6deg); box-shadow: 0 0 30px var(--ai-glow); }
 
     .tech-card h4 {
       font-family: 'Poppins', sans-serif;
@@ -1226,20 +931,8 @@
       z-index: 2;
     }
 
-    .tech-card p {
-      color: rgba(255, 255, 255, 0.65);
-      font-size: 14px;
-      line-height: 1.7;
-      margin: 0;
-      position: relative;
-      z-index: 2;
-    }
-
-    .tech-card:hover {
-      transform: translateY(-8px);
-      border-color: var(--ai-accent);
-      background: rgba(255, 138, 0, 0.05);
-    }
+    .tech-card p { color: rgba(255, 255, 255, 0.65); font-size: 14px; line-height: 1.7; margin: 0; position: relative; z-index: 2; }
+    .tech-card:hover { transform: translateY(-8px); border-color: var(--ai-accent); background: rgba(255, 138, 0, 0.05); }
 
     /* Stats section */
     #ai-stats {
@@ -1293,14 +986,8 @@
       transition: width 0.5s var(--ease-premium);
     }
 
-    .stat-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 22px 50px -18px var(--ai-glow);
-    }
-
-    .stat-card:hover::before {
-      width: 100%;
-    }
+    .stat-card:hover { transform: translateY(-6px); box-shadow: 0 22px 50px -18px var(--ai-glow); }
+    .stat-card:hover::before { width: 100%; }
 
     .stat-card .stat-num {
       font-family: 'Poppins', sans-serif;
@@ -1314,23 +1001,12 @@
       margin-bottom: 8px;
     }
 
-    .stat-card .stat-label {
-      font-family: 'Poppins', sans-serif;
-      color: #5a6178;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 1.5;
-    }
+    .stat-card .stat-label { font-family: 'Poppins', sans-serif; color: #5a6178; font-size: 14px; font-weight: 500; line-height: 1.5; }
 
-    .features-2 .feature-item {
-      transition: transform 0.4s var(--ease-premium), box-shadow 0.4s var(--ease-premium);
-    }
+    .features-2 .feature-item { transition: transform 0.4s var(--ease-premium), box-shadow 0.4s var(--ease-premium); }
 
     /* Section title flourish */
-    .section-title h2 {
-      position: relative;
-      display: inline-block;
-    }
+    .section-title h2 { position: relative; display: inline-block; }
 
     .section-title h2::after {
       content: "";
@@ -1343,7 +1019,113 @@
     }
 
     /* =============================================================
-       ★★★  FOOTER — MEGA FOOTER (AHEX-STYLE, RIDEWAVE BRAND)  ★★★
+       ★★★  WORK / CASE STUDIES SECTION  ★★★
+       (reached via the "Work" item in the existing header nav)
+       ============================================================= */
+    #work { padding: 100px 0; overflow: hidden; }
+
+    .cs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 26px;
+      margin-top: 50px;
+    }
+
+    .cs-card {
+      background: #fff;
+      border: 1px solid rgba(10, 14, 26, 0.07);
+      border-radius: 20px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.5s var(--ease-premium), box-shadow 0.5s var(--ease-premium), border-color 0.4s;
+    }
+
+    .cs-card:hover { transform: translateY(-8px); border-color: rgba(255, 138, 0, 0.4); box-shadow: 0 28px 60px -22px var(--ai-glow); }
+
+    .cs-banner { height: 140px; position: relative; display: grid; place-items: center; color: #fff; }
+    .cs-banner i { font-size: 50px; opacity: 0.9; filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.25)); }
+    .cs-banner .deco1, .cs-banner .deco2 { position: absolute; border-radius: 50%; }
+    .cs-banner .deco1 { width: 140px; height: 140px; background: rgba(255, 255, 255, 0.12); top: -40px; right: -30px; }
+    .cs-banner .deco2 { width: 90px; height: 90px; background: rgba(0, 0, 0, 0.10); bottom: -30px; left: 20px; }
+
+    .cs-body { padding: 22px 24px 26px; }
+    .cs-logo-row { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+    .cs-logo { width: 46px; height: 46px; border-radius: 13px; display: grid; place-items: center; color: #fff; font-size: 22px; flex: none; box-shadow: 0 10px 24px -8px rgba(0, 0, 0, 0.3); }
+    .cs-body h3 { font-family: 'Poppins', sans-serif; font-size: 19px; font-weight: 700; margin: 0; color: #1a1f3a; }
+    .cs-ind { color: #8a90a3; font-size: 12.5px; margin: 2px 0 0; }
+    .cs-tag { color: #5a6178; font-size: 14px; line-height: 1.6; margin: 0 0 16px; }
+    .cs-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    .cs-chips .chip { font-size: 11.5px; color: #5a6178; background: #faf7f2; border: 1px solid rgba(10, 14, 26, 0.07); padding: 5px 12px; border-radius: 999px; }
+    .cs-open { margin-top: 16px; color: var(--ai-accent); font-weight: 600; font-size: 13.5px; display: inline-flex; align-items: center; gap: 6px; transition: gap 0.3s var(--ease-premium); }
+    .cs-card:hover .cs-open { gap: 11px; }
+
+    /* detail */
+    .cs-detail-view { display: none; }
+    .cs-detail-view.show { display: block; animation: cs-fade 0.4s var(--ease-premium); }
+    @keyframes cs-fade { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+
+    .back-btn {
+      appearance: none;
+      border: 1px solid rgba(255, 138, 0, 0.3);
+      background: #fff;
+      color: var(--ai-accent);
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 13.5px;
+      padding: 10px 18px;
+      border-radius: 50px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 26px;
+      transition: 0.3s var(--ease-premium);
+    }
+
+    .back-btn:hover { background: var(--ai-accent); color: #fff; box-shadow: 0 12px 28px -10px var(--ai-glow); }
+
+    .d-hero { border-radius: 22px; overflow: hidden; border: 1px solid rgba(10, 14, 26, 0.08); box-shadow: 0 24px 60px -28px var(--ai-glow); }
+    .d-art { height: 230px; position: relative; display: grid; place-items: center; color: #fff; overflow: hidden; }
+    .d-art i { font-size: 78px; opacity: 0.92; filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.3)); }
+    .d-art .o1 { position: absolute; width: 300px; height: 300px; border-radius: 50%; background: rgba(255, 255, 255, 0.10); top: -120px; right: -60px; }
+    .d-art .o2 { position: absolute; width: 180px; height: 180px; border-radius: 50%; background: rgba(0, 0, 0, 0.12); bottom: -70px; left: 8%; }
+    .d-head { display: flex; align-items: center; gap: 18px; padding: 24px 30px; background: #fff; border-top: 1px solid rgba(10, 14, 26, 0.06); }
+    .d-head .cs-logo { width: 58px; height: 58px; font-size: 28px; }
+    .d-head h2 { font-family: 'Poppins', sans-serif; font-size: 28px; font-weight: 800; margin: 0; letter-spacing: -0.02em; color: #1a1f3a; }
+    .d-head p { color: #5a6178; margin: 5px 0 0; font-size: 14px; }
+
+    .factbar { display: flex; flex-wrap: wrap; margin: 22px 0 28px; border: 1px solid rgba(10, 14, 26, 0.08); border-radius: 16px; overflow: hidden; background: #fff; }
+    .fact { flex: 1 1 150px; padding: 16px 22px; border-right: 1px solid rgba(10, 14, 26, 0.07); }
+    .fact:last-child { border-right: 0; }
+    .fact .k { font-size: 11px; letter-spacing: 0.13em; text-transform: uppercase; color: #8a90a3; }
+    .fact .v { font-weight: 700; margin-top: 4px; font-size: 14.5px; color: #1a1f3a; }
+
+    .d-grid { display: grid; grid-template-columns: 1.45fr 0.9fr; gap: 24px; align-items: start; }
+    .block { background: #fff; border: 1px solid rgba(10, 14, 26, 0.07); border-radius: 16px; padding: 24px 26px; margin-bottom: 22px; }
+    .block h4 { font-family: 'Poppins', sans-serif; font-size: 18px; font-weight: 700; margin: 0 0 12px; display: flex; align-items: center; gap: 9px; color: #1a1f3a; }
+    .block h4 i { color: var(--ai-accent); }
+    .block p { color: #5a6178; line-height: 1.7; margin: 0 0 8px; }
+    .block ul { margin: 0; padding: 0; list-style: none; }
+    .block ul li { color: #5a6178; line-height: 1.5; padding: 9px 0 9px 26px; position: relative; border-bottom: 1px solid rgba(10, 14, 26, 0.06); }
+    .block ul li:last-child { border-bottom: 0; }
+    .block ul li::before { content: "\F138"; font-family: "bootstrap-icons"; position: absolute; left: 0; color: var(--ai-accent); font-size: 13px; top: 9px; }
+
+    .feat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .feat { background: #faf7f2; border: 1px solid rgba(10, 14, 26, 0.06); border-radius: 14px; padding: 16px; }
+    .feat .fi { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; color: #fff; font-size: 18px; margin-bottom: 10px; }
+    .feat strong { display: block; font-size: 14px; margin-bottom: 4px; color: #1a1f3a; }
+    .feat span { color: #8a90a3; font-size: 12.5px; line-height: 1.45; }
+
+    .results { border: 1px solid var(--ai-accent); background: linear-gradient(160deg, rgba(255, 138, 0, 0.10), rgba(255, 138, 0, 0.02)); }
+    .results h4 i { color: var(--ai-accent-deep); }
+
+    @media (max-width: 820px) {
+      .d-grid { grid-template-columns: 1fr; }
+      .feat-grid { grid-template-columns: 1fr; }
+    }
+
+    /* =============================================================
+       ★★★  FOOTER — MEGA FOOTER (RIDEWAVE BRAND)  ★★★
        ============================================================= */
     .rw-mega-footer {
       position: relative;
@@ -1360,381 +1142,67 @@
       left: 0;
       right: 0;
       height: 3px;
-      background: linear-gradient(90deg,
-          transparent,
-          var(--ai-accent) 30%,
-          var(--ai-accent-2) 50%,
-          var(--ai-accent) 70%,
-          transparent);
+      background: linear-gradient(90deg, transparent, var(--ai-accent) 30%, var(--ai-accent-2) 50%, var(--ai-accent) 70%, transparent);
       background-size: 200% 100%;
       animation: ai-shimmer 4s linear infinite;
     }
 
-    .rw-mega-footer .row.gx-4 {
-      --bs-gutter-x: 1.5rem;
-    }
+    .rw-mega-footer .row.gx-4 { --bs-gutter-x: 1.5rem; }
+    .rw-foot-brand { padding-right: 12px; }
 
-    .rw-foot-brand {
-      padding-right: 12px;
-    }
+    .rw-foot-logo { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; margin-bottom: 16px; }
+    .rw-foot-logo .rw-name { font-family: 'Poppins', sans-serif; font-size: 22px; font-weight: 800; color: #1a1f3a; letter-spacing: -0.01em; }
+    .rw-foot-logo .rw-name b { color: var(--ai-accent); }
 
-    .rw-foot-logo {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      text-decoration: none;
-      margin-bottom: 16px;
-    }
+    .rw-foot-desc { font-family: 'Poppins', sans-serif; font-size: 13.5px; line-height: 1.75; color: #5a6178; margin-bottom: 20px; text-align: justify; }
 
-    .rw-foot-logo .rw-mark {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      background: linear-gradient(135deg, var(--ai-accent), var(--ai-accent-deep));
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 800;
-      font-size: 22px;
-      box-shadow: 0 8px 20px -6px var(--ai-glow);
-    }
+    .rw-col-head { display: flex; align-items: center; gap: 8px; font-family: 'Poppins', sans-serif; font-size: 16px; font-weight: 700; color: var(--ai-accent); margin-bottom: 18px; }
+    .rw-col-head i { font-size: 18px; }
 
-    .rw-foot-logo .rw-name {
-      font-family: 'Poppins', sans-serif;
-      font-size: 22px;
-      font-weight: 800;
-      color: #1a1f3a;
-      letter-spacing: -0.01em;
-    }
+    .rw-subhead { font-family: 'Poppins', sans-serif; font-size: 13.5px; font-weight: 700; color: #1a1f3a; margin: 18px 0 10px; letter-spacing: 0.1px; }
+    .rw-subhead:first-child { margin-top: 0; }
 
-    .rw-foot-logo .rw-name b {
-      color: var(--ai-accent);
-    }
+    .rw-foot-list { list-style: none; padding: 0; margin: 0 0 4px; }
+    .rw-foot-list li { margin-bottom: 8px; }
+    .rw-foot-list a { font-family: 'Poppins', sans-serif; font-size: 13px; color: #5a6178; text-decoration: none; transition: color 0.25s ease, padding-left 0.25s ease; display: inline-block; position: relative; }
+    .rw-foot-list a:hover { color: var(--ai-accent); padding-left: 4px; }
+    .rw-foot-list a::before { content: ""; position: absolute; left: -8px; top: 50%; transform: translateY(-50%); width: 0; height: 1px; background: var(--ai-accent); transition: width 0.25s ease; }
+    .rw-foot-list a:hover::before { width: 4px; }
 
-    .rw-foot-desc {
-      font-family: 'Poppins', sans-serif;
-      font-size: 13.5px;
-      line-height: 1.75;
-      color: #5a6178;
-      margin-bottom: 20px;
-      text-align: justify;
-    }
-
-    .rw-foot-cta {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 16px;
-      background: rgba(255, 138, 0, 0.08);
-      color: var(--ai-accent);
-      border: 1px solid rgba(255, 138, 0, 0.2);
-      border-radius: 50px;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 600;
-      font-size: 13px;
-      text-decoration: none;
-      transition: all 0.3s var(--ease-premium);
-      margin-bottom: 28px;
-    }
-
-    .rw-foot-cta:hover {
-      background: var(--ai-accent);
-      color: #fff;
-      transform: translateX(4px);
-    }
-
-    .rw-foot-cta i {
-      font-size: 14px;
-    }
-
-    .rw-foot-recent h6 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--ai-accent);
-      margin-bottom: 14px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .rw-foot-recent h6::before {
-      content: "";
-      width: 6px;
-      height: 6px;
-      background: var(--ai-accent);
-      border-radius: 50%;
-      box-shadow: 0 0 8px var(--ai-glow);
-    }
-
-    .rw-foot-recent ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .rw-foot-recent li {
-      position: relative;
-      padding-left: 18px;
-      margin-bottom: 12px;
-      font-family: 'Poppins', sans-serif;
-      font-size: 13px;
-      line-height: 1.55;
-      color: #4a5168;
-    }
-
-    .rw-foot-recent li::before {
-      content: "›";
-      position: absolute;
-      left: 0;
-      top: 0;
-      color: var(--ai-accent);
-      font-weight: 700;
-    }
-
-    .rw-foot-recent li a {
-      color: inherit;
-      text-decoration: none;
-      transition: color 0.25s ease;
-    }
-
-    .rw-foot-recent li a:hover {
-      color: var(--ai-accent);
-    }
-
-    /* Column headings (with icon, like AHEX) */
-    .rw-col-head {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-family: 'Poppins', sans-serif;
-      font-size: 16px;
-      font-weight: 700;
-      color: var(--ai-accent);
-      margin-bottom: 18px;
-      padding-bottom: 0;
-    }
-
-    .rw-col-head i {
-      font-size: 18px;
-    }
-
-    /* Sub-heading (e.g. Frontend, Backend, AI) */
-    .rw-subhead {
-      font-family: 'Poppins', sans-serif;
-      font-size: 13.5px;
-      font-weight: 700;
-      color: #1a1f3a;
-      text-transform: none;
-      margin: 18px 0 10px;
-      letter-spacing: 0.1px;
-    }
-
-    .rw-subhead:first-child {
-      margin-top: 0;
-    }
-
-    /* Footer link list */
-    .rw-foot-list {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 4px;
-    }
-
-    .rw-foot-list li {
-      margin-bottom: 8px;
-    }
-
-    .rw-foot-list a {
-      font-family: 'Poppins', sans-serif;
-      font-size: 13px;
-      color: #5a6178;
-      text-decoration: none;
-      transition: color 0.25s ease, padding-left 0.25s ease;
-      display: inline-block;
-      position: relative;
-    }
-
-    .rw-foot-list a:hover {
-      color: var(--ai-accent);
-      padding-left: 4px;
-    }
-
-    .rw-foot-list a::before {
-      content: "";
-      position: absolute;
-      left: -8px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 0;
-      height: 1px;
-      background: var(--ai-accent);
-      transition: width 0.25s ease;
-    }
-
-    .rw-foot-list a:hover::before {
-      width: 4px;
-    }
-
-    /* Two-column tech splits inside Technology + Cloud columns */
-    .rw-tech-split {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0 18px;
-    }
-
-    @media (max-width: 575.98px) {
-      .rw-tech-split {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    /* Footer bottom bar */
-    .rw-foot-bottom {
-      margin-top: 50px;
-      padding: 22px 0;
-      border-top: 1px solid rgba(10, 14, 26, 0.06);
-      background: linear-gradient(180deg, transparent, rgba(255, 138, 0, 0.03));
-    }
-
-    .rw-foot-bottom .copyright {
-      font-family: 'Poppins', sans-serif;
-      font-size: 13px;
-      color: #5a6178;
-      margin: 0;
-    }
-
-    .rw-foot-bottom .copyright b {
-      color: #1a1f3a;
-    }
-
-    .rw-foot-bottom .legal-links {
-      display: flex;
-      gap: 22px;
-      justify-content: flex-end;
-      flex-wrap: wrap;
-    }
-
-    .rw-foot-bottom .legal-links a {
-      font-family: 'Poppins', sans-serif;
-      font-size: 13px;
-      color: #5a6178;
-      text-decoration: none;
-      transition: color 0.25s ease;
-    }
-
-    .rw-foot-bottom .legal-links a:hover {
-      color: var(--ai-accent);
-    }
-
-    .rw-foot-social {
-      display: flex;
-      gap: 10px;
-      margin-top: 16px;
-    }
-
-    .rw-foot-social a {
-      width: 36px;
-      height: 36px;
-      border-radius: 10px;
-      background: rgba(255, 138, 0, 0.08);
-      color: var(--ai-accent);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      font-size: 16px;
-      transition: all 0.3s var(--ease-premium);
-    }
-
-    .rw-foot-social a:hover {
-      background: var(--ai-accent);
-      color: #fff;
-      transform: translateY(-3px);
-      box-shadow: 0 8px 16px -4px var(--ai-glow);
-    }
+    .rw-foot-bottom { margin-top: 50px; padding: 22px 0; border-top: 1px solid rgba(10, 14, 26, 0.06); background: linear-gradient(180deg, transparent, rgba(255, 138, 0, 0.03)); }
+    .rw-foot-bottom .copyright { font-family: 'Poppins', sans-serif; font-size: 13px; color: #5a6178; margin: 0; }
+    .rw-foot-bottom .copyright b { color: #1a1f3a; }
+    .rw-foot-bottom .legal-links { display: flex; gap: 22px; justify-content: flex-end; flex-wrap: wrap; }
+    .rw-foot-bottom .legal-links a { font-family: 'Poppins', sans-serif; font-size: 13px; color: #5a6178; text-decoration: none; transition: color 0.25s ease; }
+    .rw-foot-bottom .legal-links a:hover { color: var(--ai-accent); }
 
     @media (max-width: 991.98px) {
-      .rw-mega-footer {
-        padding-top: 50px;
-      }
-
-      .rw-foot-brand {
-        margin-bottom: 30px;
-      }
-
-      .rw-foot-bottom .legal-links {
-        justify-content: flex-start;
-        margin-top: 10px;
-      }
+      .rw-mega-footer { padding-top: 50px; }
+      .rw-foot-brand { margin-bottom: 30px; }
+      .rw-foot-bottom .legal-links { justify-content: flex-start; margin-top: 10px; }
     }
 
     /* Reduced motion support */
     @media (prefers-reduced-motion: reduce) {
-
-      *,
-      *::before,
-      *::after {
+      *, *::before, *::after {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
       }
-
-      #ai-neural-canvas,
-      #hero-particles {
-        display: none;
-      }
-
-      .ai-cursor,
-      .ai-cursor-dot {
-        display: none;
-      }
-
-      .hero-grid-floor,
-      .hero-sphere,
-      .hero-scanline {
-        display: none;
-      }
+      #ai-neural-canvas, #hero-particles { display: none; }
+      .ai-cursor, .ai-cursor-dot { display: none; }
+      .hero-grid-floor, .hero-sphere, .hero-scanline { display: none; }
     }
 
     @media (max-width: 768px) {
-      .portfolio-card .pf-num {
-        font-size: 60px;
-      }
-
-      .ai-orb-1 {
-        width: 240px;
-        height: 240px;
-      }
-
-      .ai-orb-2 {
-        width: 220px;
-        height: 220px;
-      }
-
-      .ai-orb-3 {
-        display: none;
-      }
-
-      .hero {
-        padding: 100px 0 60px;
-        min-height: auto;
-      }
-
-      .hero-strip {
-        gap: 18px;
-        padding: 18px;
-      }
-
-      .hero-strip-item {
-        min-width: 100px;
-      }
-
-      .hero-strip-num {
-        font-size: 20px;
-      }
+      .portfolio-card .pf-num { font-size: 60px; }
+      .ai-orb-1 { width: 240px; height: 240px; }
+      .ai-orb-2 { width: 220px; height: 220px; }
+      .ai-orb-3 { display: none; }
+      .hero { padding: 100px 0 60px; min-height: auto; }
+      .hero-strip { gap: 18px; padding: 18px; }
+      .hero-strip-item { min-width: 100px; }
+      .hero-strip-num { font-size: 20px; }
     }
   </style>
 </head>
@@ -1765,6 +1233,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#features">What We Do</a></li>
           <li><a href="#ai-portfolio">Portfolio</a></li>
+          <li><a href="#work">Work</a></li>
           <li><a href="#ai-technologies">Technologies</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -1783,24 +1252,14 @@
          ============================================================ -->
     <section id="hero" class="hero section">
 
-      <!-- Layer 0: perspective grid floor -->
       <div class="hero-grid-floor" aria-hidden="true"></div>
-
-      <!-- Layer 0: hex pattern -->
       <div class="hero-hex-pattern" aria-hidden="true"></div>
-
-      <!-- Layer 0: floating orbs -->
       <div class="ai-orb ai-orb-1" aria-hidden="true"></div>
       <div class="ai-orb ai-orb-2" aria-hidden="true"></div>
       <div class="ai-orb ai-orb-3" aria-hidden="true"></div>
-
-      <!-- Layer 1: particle canvas -->
       <canvas id="hero-particles" aria-hidden="true"></canvas>
-
-      <!-- Layer 1: sweeping scanline -->
       <div class="hero-scanline" aria-hidden="true"></div>
 
-      <!-- Layer 1: AI sphere (rotating wireframe) -->
       <div class="hero-sphere" aria-hidden="true">
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
           <defs>
@@ -1815,37 +1274,18 @@
             </linearGradient>
           </defs>
           <circle cx="100" cy="100" r="95" fill="url(#sphereGrad)" />
-          <!-- meridians -->
-          <ellipse cx="100" cy="100" rx="95" ry="95" fill="none" stroke="url(#lineGrad)" stroke-width="0.8"
-            opacity="0.5" />
-          <ellipse cx="100" cy="100" rx="78" ry="95" fill="none" stroke="url(#lineGrad)" stroke-width="0.8"
-            opacity="0.45" />
-          <ellipse cx="100" cy="100" rx="55" ry="95" fill="none" stroke="url(#lineGrad)" stroke-width="0.8"
-            opacity="0.4" />
-          <ellipse cx="100" cy="100" rx="28" ry="95" fill="none" stroke="url(#lineGrad)" stroke-width="0.8"
-            opacity="0.35" />
-          <ellipse cx="100" cy="100" rx="0.5" ry="95" fill="none" stroke="url(#lineGrad)" stroke-width="0.8"
-            opacity="0.3" />
-          <!-- parallels -->
-          <ellipse cx="100" cy="100" rx="95" ry="78" fill="none" stroke="url(#lineGrad)" stroke-width="0.8"
-            opacity="0.45" />
-          <ellipse cx="100" cy="100" rx="95" ry="55" fill="none" stroke="url(#lineGrad)" stroke-width="0.8"
-            opacity="0.4" />
-          <ellipse cx="100" cy="100" rx="95" ry="28" fill="none" stroke="url(#lineGrad)" stroke-width="0.8"
-            opacity="0.35" />
-          <!-- nodes -->
-          <circle cx="100" cy="5" r="3" fill="#ff8a00">
-            <animate attributeName="r" values="2.5;4;2.5" dur="2.5s" repeatCount="indefinite" />
-          </circle>
-          <circle cx="100" cy="195" r="3" fill="#ff8a00">
-            <animate attributeName="r" values="2.5;4;2.5" dur="2.5s" begin="0.5s" repeatCount="indefinite" />
-          </circle>
-          <circle cx="5" cy="100" r="3" fill="#ffa940">
-            <animate attributeName="r" values="2.5;4;2.5" dur="2.5s" begin="1s" repeatCount="indefinite" />
-          </circle>
-          <circle cx="195" cy="100" r="3" fill="#ffa940">
-            <animate attributeName="r" values="2.5;4;2.5" dur="2.5s" begin="1.5s" repeatCount="indefinite" />
-          </circle>
+          <ellipse cx="100" cy="100" rx="95" ry="95" fill="none" stroke="url(#lineGrad)" stroke-width="0.8" opacity="0.5" />
+          <ellipse cx="100" cy="100" rx="78" ry="95" fill="none" stroke="url(#lineGrad)" stroke-width="0.8" opacity="0.45" />
+          <ellipse cx="100" cy="100" rx="55" ry="95" fill="none" stroke="url(#lineGrad)" stroke-width="0.8" opacity="0.4" />
+          <ellipse cx="100" cy="100" rx="28" ry="95" fill="none" stroke="url(#lineGrad)" stroke-width="0.8" opacity="0.35" />
+          <ellipse cx="100" cy="100" rx="0.5" ry="95" fill="none" stroke="url(#lineGrad)" stroke-width="0.8" opacity="0.3" />
+          <ellipse cx="100" cy="100" rx="95" ry="78" fill="none" stroke="url(#lineGrad)" stroke-width="0.8" opacity="0.45" />
+          <ellipse cx="100" cy="100" rx="95" ry="55" fill="none" stroke="url(#lineGrad)" stroke-width="0.8" opacity="0.4" />
+          <ellipse cx="100" cy="100" rx="95" ry="28" fill="none" stroke="url(#lineGrad)" stroke-width="0.8" opacity="0.35" />
+          <circle cx="100" cy="5" r="3" fill="#ff8a00"><animate attributeName="r" values="2.5;4;2.5" dur="2.5s" repeatCount="indefinite" /></circle>
+          <circle cx="100" cy="195" r="3" fill="#ff8a00"><animate attributeName="r" values="2.5;4;2.5" dur="2.5s" begin="0.5s" repeatCount="indefinite" /></circle>
+          <circle cx="5" cy="100" r="3" fill="#ffa940"><animate attributeName="r" values="2.5;4;2.5" dur="2.5s" begin="1s" repeatCount="indefinite" /></circle>
+          <circle cx="195" cy="100" r="3" fill="#ffa940"><animate attributeName="r" values="2.5;4;2.5" dur="2.5s" begin="1.5s" repeatCount="indefinite" /></circle>
           <circle cx="100" cy="100" r="6" fill="#ff8a00" opacity="0.9">
             <animate attributeName="r" values="5;9;5" dur="2s" repeatCount="indefinite" />
             <animate attributeName="opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite" />
@@ -1853,7 +1293,6 @@
         </svg>
       </div>
 
-      <!-- Layer 1: floating tech chips -->
       <div class="hero-chip hero-chip-1" aria-hidden="true"><i class="bi bi-cpu-fill"></i>AI Agents</div>
       <div class="hero-chip hero-chip-2" aria-hidden="true"><i class="bi bi-cloud-fill"></i>Cloud Native</div>
       <div class="hero-chip hero-chip-3" aria-hidden="true"><i class="bi bi-shield-lock-fill"></i>Cyber Security</div>
@@ -1862,7 +1301,6 @@
       <div class="hero-chip hero-chip-6" aria-hidden="true"><i class="bi bi-diagram-3-fill"></i>Microservices</div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row justify-content-center">
           <div class="col-lg-10" data-aos="zoom-in" data-aos-delay="200">
             <div class="hero-content">
@@ -1898,42 +1336,25 @@
               </div>
 
               <div class="hero-strip" data-aos="fade-up" data-aos-delay="700">
-                <div class="hero-strip-item">
-                  <div class="hero-strip-num">99.95%</div>
-                  <div class="hero-strip-label">Uptime SLA</div>
-                </div>
-                <div class="hero-strip-item">
-                  <div class="hero-strip-num">10K+</div>
-                  <div class="hero-strip-label">Req / Second</div>
-                </div>
-                <div class="hero-strip-item">
-                  <div class="hero-strip-num">&lt;100ms</div>
-                  <div class="hero-strip-label">Latency</div>
-                </div>
-                <div class="hero-strip-item">
-                  <div class="hero-strip-num">24/7</div>
-                  <div class="hero-strip-label">Engineering</div>
-                </div>
+                <div class="hero-strip-item"><div class="hero-strip-num">99.95%</div><div class="hero-strip-label">Uptime SLA</div></div>
+                <div class="hero-strip-item"><div class="hero-strip-num">10K+</div><div class="hero-strip-label">Req / Second</div></div>
+                <div class="hero-strip-item"><div class="hero-strip-num">&lt;100ms</div><div class="hero-strip-label">Latency</div></div>
+                <div class="hero-strip-item"><div class="hero-strip-num">24/7</div><div class="hero-strip-label">Engineering</div></div>
               </div>
 
             </div>
           </div>
         </div>
-
       </div>
 
-      <!-- Scroll cue -->
       <div class="hero-scroll-cue" aria-hidden="true"></div>
 
     </section><!-- /Hero Section -->
 
     <!-- About Section -->
     <section id="about" class="about section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row align-items-center gy-5">
-
           <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
             <div class="image-section">
               <div class="primary-image">
@@ -1968,9 +1389,7 @@
 
               <div class="achievement-list">
                 <div class="achievement-item ai-pulse-host">
-                  <div class="achievement-icon">
-                    <i class="bi bi-rocket-takeoff-fill"></i>
-                  </div>
+                  <div class="achievement-icon"><i class="bi bi-rocket-takeoff-fill"></i></div>
                   <div class="achievement-content">
                     <h4>Our Vision</h4>
                     <p>To become a global leader in AI-powered digital transformation by building
@@ -1978,9 +1397,7 @@
                   </div>
                 </div>
                 <div class="achievement-item ai-pulse-host">
-                  <div class="achievement-icon">
-                    <i class="bi bi-bullseye"></i>
-                  </div>
+                  <div class="achievement-icon"><i class="bi bi-bullseye"></i></div>
                   <div class="achievement-content">
                     <h4>Our Mission</h4>
                     <p>Empower organizations with intelligent, scalable, and human-centered technology
@@ -1988,9 +1405,7 @@
                   </div>
                 </div>
                 <div class="achievement-item ai-pulse-host">
-                  <div class="achievement-icon">
-                    <i class="bi bi-cpu-fill"></i>
-                  </div>
+                  <div class="achievement-icon"><i class="bi bi-cpu-fill"></i></div>
                   <div class="achievement-content">
                     <h4>Core Technical Strength</h4>
                     <p>High-concurrency, distributed systems for finance, healthcare, and enterprise
@@ -2003,16 +1418,12 @@
 
             </div>
           </div>
-
         </div>
-
       </div>
-
     </section><!-- /About Section -->
 
     <!-- What We Provide -->
     <section id="features" class="features section">
-
       <div class="container section-title" data-aos="fade-up">
         <h2>What We Provide</h2>
         <p>End-to-end intelligent systems — from AI agents and automation to cloud-native infrastructure,
@@ -2020,9 +1431,7 @@
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row align-items-center">
-
           <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
             <div class="features-content">
               <h2>Intelligent Systems, Engineered for Scale</h2>
@@ -2033,210 +1442,147 @@
               </p>
             </div>
           </div>
-
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
             <div class="features-image">
               <img src="assets/img/features/features-4.webp" alt="AI engineering" class="img-fluid">
             </div>
           </div>
-
         </div>
 
         <div class="features-grid" data-aos="fade-up" data-aos-delay="400">
-
           <div class="feature-item ai-tilt ai-pulse-host" data-aos="zoom-in" data-aos-delay="100">
-            <div class="feature-icon">
-              <i class="bi bi-robot"></i>
-            </div>
+            <div class="feature-icon"><i class="bi bi-robot"></i></div>
             <div class="feature-content">
               <h4>AI &amp; Intelligent Automation</h4>
               <p>AI Chatbots, AI Agents, Business Process Automation, AI Customer Support, Workflow
                 Automation, and Generative AI Solutions — purpose-built for measurable business impact.</p>
             </div>
           </div>
-
           <div class="feature-item ai-tilt ai-pulse-host" data-aos="zoom-in" data-aos-delay="200">
-            <div class="feature-icon">
-              <i class="bi bi-code-slash"></i>
-            </div>
+            <div class="feature-icon"><i class="bi bi-code-slash"></i></div>
             <div class="feature-content">
               <h4>Web &amp; Software Development</h4>
               <p>Business websites, web applications, enterprise software, SaaS platforms, API
                 development, and high-performance mobile apps — engineered with modern, durable stacks.</p>
             </div>
           </div>
-
           <div class="feature-item ai-tilt ai-pulse-host" data-aos="zoom-in" data-aos-delay="300">
-            <div class="feature-icon">
-              <i class="bi bi-cloud-arrow-up-fill"></i>
-            </div>
+            <div class="feature-icon"><i class="bi bi-cloud-arrow-up-fill"></i></div>
             <div class="feature-content">
               <h4>Cloud &amp; DevOps</h4>
               <p>AWS / Azure / GCP, cloud migration, Docker &amp; Kubernetes orchestration, CI/CD
                 automation, and infrastructure management — for resilient, cost-efficient operations.</p>
             </div>
           </div>
-
           <div class="feature-item ai-tilt ai-pulse-host" data-aos="zoom-in" data-aos-delay="400">
-            <div class="feature-icon">
-              <i class="bi bi-bar-chart-line-fill"></i>
-            </div>
+            <div class="feature-icon"><i class="bi bi-bar-chart-line-fill"></i></div>
             <div class="feature-content">
               <h4>Data &amp; Analytics</h4>
               <p>Business intelligence, data engineering, real-time dashboards, predictive analytics,
                 and AI-powered data pipelines — turning raw data into decision-ready insight.</p>
             </div>
           </div>
-
           <div class="feature-item ai-tilt ai-pulse-host" data-aos="zoom-in" data-aos-delay="500">
-            <div class="feature-icon">
-              <i class="bi bi-shield-lock-fill"></i>
-            </div>
+            <div class="feature-icon"><i class="bi bi-shield-lock-fill"></i></div>
             <div class="feature-content">
               <h4>Cybersecurity</h4>
               <p>Security audits, cloud security, threat monitoring, compliance solutions
                 (PCI-DSS / HIPAA / SOX), and risk management — security designed in, not bolted on.</p>
             </div>
           </div>
-
           <div class="feature-item ai-tilt ai-pulse-host" data-aos="zoom-in" data-aos-delay="600">
-            <div class="feature-icon">
-              <i class="bi bi-diagram-3-fill"></i>
-            </div>
+            <div class="feature-icon"><i class="bi bi-diagram-3-fill"></i></div>
             <div class="feature-content">
               <h4>Enterprise Modernization</h4>
               <p>Legacy-to-cloud transformation, microservices architecture, and event-driven systems —
                 modernizing critical infrastructure with zero-disruption migration strategies.</p>
             </div>
           </div>
-
         </div>
-
       </div>
-
     </section><!-- /What We Provide -->
 
     <!-- Why Choose Us -->
     <section id="features-2" class="features-2 section">
-
       <div class="container section-title" data-aos="fade-up">
         <h2>Why Choose Us</h2>
         <p>An AI-first approach. Future-ready solutions. Enterprise-level engineering with a global delivery model.</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="features-list row gy-4">
           <div class="col-md-6">
             <div class="feature-item ai-tilt ai-pulse-host" data-aos="fade-up" data-aos-delay="100">
-              <div class="feature-icon">
-                <i class="bi bi-cpu"></i>
-              </div>
+              <div class="feature-icon"><i class="bi bi-cpu"></i></div>
               <div class="feature-content">
                 <h4>AI-First Approach</h4>
                 <p>Every solution starts with the question: how can AI make this faster, smarter, and more
                   reliable? We build with intelligence at the core, not as an afterthought.</p>
-                <div class="feature-tags">
-                  <span>Intelligent</span>
-                  <span>Future-ready</span>
-                </div>
+                <div class="feature-tags"><span>Intelligent</span><span>Future-ready</span></div>
               </div>
             </div>
           </div>
-
           <div class="col-md-6">
             <div class="feature-item ai-tilt ai-pulse-host" data-aos="fade-up" data-aos-delay="200">
-              <div class="feature-icon">
-                <i class="bi bi-diagram-3"></i>
-              </div>
+              <div class="feature-icon"><i class="bi bi-diagram-3"></i></div>
               <div class="feature-content">
                 <h4>Scalable Architecture</h4>
                 <p>Distributed, event-driven, cloud-native systems that scale from zero to ten thousand
                   requests per second without rewriting a single service.</p>
-                <div class="feature-tags">
-                  <span>Distributed</span>
-                  <span>Cloud-native</span>
-                </div>
+                <div class="feature-tags"><span>Distributed</span><span>Cloud-native</span></div>
               </div>
             </div>
           </div>
-
           <div class="col-md-6">
             <div class="feature-item ai-tilt ai-pulse-host" data-aos="fade-up" data-aos-delay="300">
-              <div class="feature-icon">
-                <i class="bi bi-shield-shaded"></i>
-              </div>
+              <div class="feature-icon"><i class="bi bi-shield-shaded"></i></div>
               <div class="feature-content">
                 <h4>Security by Design</h4>
                 <p>PCI-DSS, HIPAA, and SOX-ready engineering. Threat modelling, secret management, and
                   zero-trust principles applied at every layer of the stack.</p>
-                <div class="feature-tags">
-                  <span>Compliance</span>
-                  <span>Zero-trust</span>
-                </div>
+                <div class="feature-tags"><span>Compliance</span><span>Zero-trust</span></div>
               </div>
             </div>
           </div>
-
           <div class="col-md-6">
             <div class="feature-item ai-tilt ai-pulse-host" data-aos="fade-up" data-aos-delay="400">
-              <div class="feature-icon">
-                <i class="bi bi-globe2"></i>
-              </div>
+              <div class="feature-icon"><i class="bi bi-globe2"></i></div>
               <div class="feature-content">
                 <h4>Global Delivery Model</h4>
                 <p>Engineering teams aligned across timezones, with continuous delivery pipelines,
                   observability, and SLA-backed support — so your roadmap never stalls.</p>
-                <div class="feature-tags">
-                  <span>24/7 Delivery</span>
-                  <span>SLA-backed</span>
-                </div>
+                <div class="feature-tags"><span>24/7 Delivery</span><span>SLA-backed</span></div>
               </div>
             </div>
           </div>
-
           <div class="col-md-6">
             <div class="feature-item ai-tilt ai-pulse-host" data-aos="fade-up" data-aos-delay="500">
-              <div class="feature-icon">
-                <i class="bi bi-stack"></i>
-              </div>
+              <div class="feature-icon"><i class="bi bi-stack"></i></div>
               <div class="feature-content">
                 <h4>Modern Technology Stack</h4>
                 <p>Python, FastAPI, Django, Node, React, Kubernetes, Terraform, Postgres, Kafka, Redis —
                   and the right AI/ML tooling on top, chosen pragmatically for the problem.</p>
-                <div class="feature-tags">
-                  <span>Pragmatic</span>
-                  <span>Battle-tested</span>
-                </div>
+                <div class="feature-tags"><span>Pragmatic</span><span>Battle-tested</span></div>
               </div>
             </div>
           </div>
-
           <div class="col-md-6">
             <div class="feature-item ai-tilt ai-pulse-host" data-aos="fade-up" data-aos-delay="600">
-              <div class="feature-icon">
-                <i class="bi bi-speedometer2"></i>
-              </div>
+              <div class="feature-icon"><i class="bi bi-speedometer2"></i></div>
               <div class="feature-content">
                 <h4>High-Performance Systems</h4>
                 <p>Sub-100ms latency targets. 99.95% uptime SLAs. Built for finance, healthcare, and
                   enterprise workloads where every millisecond and every nine matters.</p>
-                <div class="feature-tags">
-                  <span>Sub-100ms</span>
-                  <span>99.95% Uptime</span>
-                </div>
+                <div class="feature-tags"><span>Sub-100ms</span><span>99.95% Uptime</span></div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
-
     </section><!-- /Why Choose Us -->
 
     <!-- Impressive Portfolio -->
     <section id="ai-portfolio" class="section">
-
       <div class="container section-title" data-aos="fade-up">
         <h2>Impressive Portfolio</h2>
         <p>Real systems we have engineered for AI customer support, healthcare, retail analytics,
@@ -2245,7 +1591,6 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="portfolio-grid">
-
           <article class="portfolio-card ai-tilt" data-aos="fade-up" data-aos-delay="100">
             <span class="pf-num">01</span>
             <div class="pf-icon"><i class="bi bi-chat-square-dots-fill"></i></div>
@@ -2257,7 +1602,6 @@
               <span><b>Outcome</b> Faster resolution &amp; scalable operations</span>
             </div>
           </article>
-
           <article class="portfolio-card ai-tilt" data-aos="fade-up" data-aos-delay="150">
             <span class="pf-num">02</span>
             <div class="pf-icon"><i class="bi bi-heart-pulse-fill"></i></div>
@@ -2269,7 +1613,6 @@
               <span><b>Outcome</b> Streamlined service delivery</span>
             </div>
           </article>
-
           <article class="portfolio-card ai-tilt" data-aos="fade-up" data-aos-delay="200">
             <span class="pf-num">03</span>
             <div class="pf-icon"><i class="bi bi-graph-up-arrow"></i></div>
@@ -2281,7 +1624,6 @@
               <span><b>Outcome</b> Better visibility &amp; decisions</span>
             </div>
           </article>
-
           <article class="portfolio-card ai-tilt" data-aos="fade-up" data-aos-delay="250">
             <span class="pf-num">04</span>
             <div class="pf-icon"><i class="bi bi-diagram-2-fill"></i></div>
@@ -2293,7 +1635,6 @@
               <span><b>Outcome</b> Faster execution, fewer errors</span>
             </div>
           </article>
-
           <article class="portfolio-card ai-tilt" data-aos="fade-up" data-aos-delay="300">
             <span class="pf-num">05</span>
             <div class="pf-icon"><i class="bi bi-hdd-network-fill"></i></div>
@@ -2305,7 +1646,6 @@
               <span><b>Outcome</b> High performance &amp; resilience</span>
             </div>
           </article>
-
           <article class="portfolio-card ai-tilt" data-aos="fade-up" data-aos-delay="350">
             <span class="pf-num">06</span>
             <div class="pf-icon"><i class="bi bi-shield-fill-check"></i></div>
@@ -2317,15 +1657,30 @@
               <span><b>Outcome</b> Compliance-aligned modern stack</span>
             </div>
           </article>
-
         </div>
       </div>
-
     </section><!-- /Portfolio -->
+
+    <!-- ============================================================
+         ★ WORK / CASE STUDIES (opened from the "Work" nav item) ★
+         ============================================================ -->
+    <section id="work" class="section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Work</h2>
+        <p>Platforms we designed and engineered end-to-end. Select a case study to read the full story,
+          then come back to explore another.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <!-- Card grid -->
+        <div class="cs-grid" id="csGrid"></div>
+        <!-- Detail view (filled by JS, shown in place of the grid) -->
+        <div class="cs-detail-view" id="csDetail"></div>
+      </div>
+    </section><!-- /Work -->
 
     <!-- Industries We Serve -->
     <section id="ai-industries" class="section">
-
       <div class="container section-title" data-aos="fade-up">
         <h2>Industries We Serve</h2>
         <p>Domain depth across regulated and high-scale industries — from healthcare and finance to logistics and
@@ -2334,38 +1689,20 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="industries-grid">
-          <div class="industry-chip" data-aos="zoom-in" data-aos-delay="50">
-            <i class="bi bi-heart-pulse"></i><span>Healthcare</span>
-          </div>
-          <div class="industry-chip" data-aos="zoom-in" data-aos-delay="100">
-            <i class="bi bi-mortarboard-fill"></i><span>Education</span>
-          </div>
-          <div class="industry-chip" data-aos="zoom-in" data-aos-delay="150">
-            <i class="bi bi-bank2"></i><span>Finance</span>
-          </div>
-          <div class="industry-chip" data-aos="zoom-in" data-aos-delay="200">
-            <i class="bi bi-bag-check-fill"></i><span>Ecommerce</span>
-          </div>
-          <div class="industry-chip" data-aos="zoom-in" data-aos-delay="250">
-            <i class="bi bi-truck"></i><span>Logistics</span>
-          </div>
-          <div class="industry-chip" data-aos="zoom-in" data-aos-delay="300">
-            <i class="bi bi-gear-wide-connected"></i><span>Manufacturing</span>
-          </div>
-          <div class="industry-chip" data-aos="zoom-in" data-aos-delay="350">
-            <i class="bi bi-house-door-fill"></i><span>Real Estate</span>
-          </div>
-          <div class="industry-chip" data-aos="zoom-in" data-aos-delay="400">
-            <i class="bi bi-building-fill"></i><span>Government</span>
-          </div>
+          <div class="industry-chip" data-aos="zoom-in" data-aos-delay="50"><i class="bi bi-heart-pulse"></i><span>Healthcare</span></div>
+          <div class="industry-chip" data-aos="zoom-in" data-aos-delay="100"><i class="bi bi-mortarboard-fill"></i><span>Education</span></div>
+          <div class="industry-chip" data-aos="zoom-in" data-aos-delay="150"><i class="bi bi-bank2"></i><span>Finance</span></div>
+          <div class="industry-chip" data-aos="zoom-in" data-aos-delay="200"><i class="bi bi-bag-check-fill"></i><span>Ecommerce</span></div>
+          <div class="industry-chip" data-aos="zoom-in" data-aos-delay="250"><i class="bi bi-truck"></i><span>Logistics</span></div>
+          <div class="industry-chip" data-aos="zoom-in" data-aos-delay="300"><i class="bi bi-gear-wide-connected"></i><span>Manufacturing</span></div>
+          <div class="industry-chip" data-aos="zoom-in" data-aos-delay="350"><i class="bi bi-house-door-fill"></i><span>Real Estate</span></div>
+          <div class="industry-chip" data-aos="zoom-in" data-aos-delay="400"><i class="bi bi-building-fill"></i><span>Government</span></div>
         </div>
       </div>
-
     </section><!-- /Industries -->
 
     <!-- Technologies Defining the Future -->
     <section id="ai-technologies" class="section">
-
       <div class="container section-title" data-aos="fade-up">
         <h2>Technologies Defining the Future</h2>
         <p>The technologies we are betting on for the next decade — and engineering toward today.</p>
@@ -2373,58 +1710,44 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="tech-grid">
-
           <div class="tech-card" data-aos="fade-up" data-aos-delay="100">
             <div class="tech-icon"><i class="bi bi-cpu-fill"></i></div>
             <h4>Artificial Intelligence</h4>
             <p>Foundation models, fine-tuned LLMs, and applied ML — embedded into real business workflows.</p>
           </div>
-
           <div class="tech-card" data-aos="fade-up" data-aos-delay="150">
             <div class="tech-icon"><i class="bi bi-robot"></i></div>
             <h4>AI Agents</h4>
             <p>Autonomous, tool-using agents that plan, retrieve, and act — with human-in-the-loop guardrails.</p>
           </div>
-
           <div class="tech-card" data-aos="fade-up" data-aos-delay="250">
             <div class="tech-icon"><i class="bi bi-link-45deg"></i></div>
             <h4>Blockchain &amp; Digital Trust</h4>
             <p>Verifiable credentials, smart contracts, and trust fabrics for high-integrity systems.</p>
           </div>
-
           <div class="tech-card" data-aos="fade-up" data-aos-delay="350">
             <div class="tech-icon"><i class="bi bi-router-fill"></i></div>
             <h4>Robotics &amp; IoT</h4>
             <p>Edge intelligence, sensor fabrics, and autonomous systems connecting the physical world to the cloud.</p>
           </div>
-
         </div>
       </div>
-
     </section><!-- /Technologies -->
-
-
 
     <!-- FAQ Section -->
     <section id="faq" class="faq section">
-
       <div class="container section-title" data-aos="fade-up">
         <h2>Frequently Asked</h2>
         <p>Honest answers about how we engineer, deliver, and partner.</p>
       </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row justify-content-center">
           <div class="col-lg-10">
-
             <div class="faq-container">
-
               <div class="faq-item ai-pulse-host" data-aos="fade-up" data-aos-delay="200">
                 <div class="question-wrapper">
-                  <div class="icon-wrapper">
-                    <i class="bi bi-patch-question"></i>
-                  </div>
+                  <div class="icon-wrapper"><i class="bi bi-patch-question"></i></div>
                   <div class="content-wrapper">
                     <h3 class="question">What does an "AI-driven digital transformation" engagement look like?</h3>
                     <div class="answer">
@@ -2436,12 +1759,9 @@
                   </div>
                 </div>
               </div>
-
               <div class="faq-item ai-pulse-host" data-aos="fade-up" data-aos-delay="250">
                 <div class="question-wrapper">
-                  <div class="icon-wrapper">
-                    <i class="bi bi-patch-question"></i>
-                  </div>
+                  <div class="icon-wrapper"><i class="bi bi-patch-question"></i></div>
                   <div class="content-wrapper">
                     <h3 class="question">Which industries do you specialize in?</h3>
                     <div class="answer">
@@ -2452,12 +1772,9 @@
                   </div>
                 </div>
               </div>
-
               <div class="faq-item ai-pulse-host" data-aos="fade-up" data-aos-delay="300">
                 <div class="question-wrapper">
-                  <div class="icon-wrapper">
-                    <i class="bi bi-patch-question"></i>
-                  </div>
+                  <div class="icon-wrapper"><i class="bi bi-patch-question"></i></div>
                   <div class="content-wrapper">
                     <h3 class="question">How do you approach security and compliance?</h3>
                     <div class="answer">
@@ -2468,12 +1785,9 @@
                   </div>
                 </div>
               </div>
-
               <div class="faq-item ai-pulse-host" data-aos="fade-up" data-aos-delay="350">
                 <div class="question-wrapper">
-                  <div class="icon-wrapper">
-                    <i class="bi bi-patch-question"></i>
-                  </div>
+                  <div class="icon-wrapper"><i class="bi bi-patch-question"></i></div>
                   <div class="content-wrapper">
                     <h3 class="question">Can you handle small startups as well as enterprise modernization?</h3>
                     <div class="answer">
@@ -2485,12 +1799,9 @@
                   </div>
                 </div>
               </div>
-
               <div class="faq-item ai-pulse-host" data-aos="fade-up" data-aos-delay="400">
                 <div class="question-wrapper">
-                  <div class="icon-wrapper">
-                    <i class="bi bi-patch-question"></i>
-                  </div>
+                  <div class="icon-wrapper"><i class="bi bi-patch-question"></i></div>
                   <div class="content-wrapper">
                     <h3 class="question">What technologies do you typically use?</h3>
                     <div class="answer">
@@ -2502,12 +1813,9 @@
                   </div>
                 </div>
               </div>
-
               <div class="faq-item ai-pulse-host" data-aos="fade-up" data-aos-delay="450">
                 <div class="question-wrapper">
-                  <div class="icon-wrapper">
-                    <i class="bi bi-patch-question"></i>
-                  </div>
+                  <div class="icon-wrapper"><i class="bi bi-patch-question"></i></div>
                   <div class="content-wrapper">
                     <h3 class="question">How long does a typical project take?</h3>
                     <div class="answer">
@@ -2518,14 +1826,10 @@
                   </div>
                 </div>
               </div>
-
             </div>
-
           </div>
         </div>
-
       </div>
-
     </section><!-- /FAQ -->
 
     <!-- Contact Section -->
@@ -2549,43 +1853,20 @@
 
                 <div class="info-grid">
                   <div class="info-card ai-pulse-host" data-aos="slide-up" data-aos-delay="250">
-                    <div class="card-icon">
-                      <i class="bi bi-house-door"></i>
-                    </div>
-                    <div class="card-content">
-                      <h4>Visit Our Office</h4>
-                      <p>Hyderabad, India</p>
-                    </div>
+                    <div class="card-icon"><i class="bi bi-house-door"></i></div>
+                    <div class="card-content"><h4>Visit Our Office</h4><p>Hyderabad, India</p></div>
                   </div>
-
                   <div class="info-card ai-pulse-host" data-aos="slide-up" data-aos-delay="300">
-                    <div class="card-icon">
-                      <i class="bi bi-chat-dots"></i>
-                    </div>
-                    <div class="card-content">
-                      <h4>Send Us a Message</h4>
-                      <p>info@ridewave.in</p>
-                    </div>
+                    <div class="card-icon"><i class="bi bi-chat-dots"></i></div>
+                    <div class="card-content"><h4>Send Us a Message</h4><p>info@ridewave.in</p></div>
                   </div>
-
                   <div class="info-card ai-pulse-host" data-aos="slide-up" data-aos-delay="350">
-                    <div class="card-icon">
-                      <i class="bi bi-headset"></i>
-                    </div>
-                    <div class="card-content">
-                      <h4>Call Us Directly</h4>
-                      <p>+91 97046 74140 <br> +91 80193 87674</p>
-                    </div>
+                    <div class="card-icon"><i class="bi bi-headset"></i></div>
+                    <div class="card-content"><h4>Call Us Directly</h4><p>+91 97046 74140 <br> +91 80193 87674</p></div>
                   </div>
-
                   <div class="info-card ai-pulse-host" data-aos="slide-up" data-aos-delay="400">
-                    <div class="card-icon">
-                      <i class="bi bi-calendar3"></i>
-                    </div>
-                    <div class="card-content">
-                      <h4>Business Hours</h4>
-                      <p>Mon–Fri: 9 AM – 6 PM</p>
-                    </div>
+                    <div class="card-icon"><i class="bi bi-calendar3"></i></div>
+                    <div class="card-content"><h4>Business Hours</h4><p>Mon–Fri: 9 AM – 6 PM</p></div>
                   </div>
                 </div>
 
@@ -2613,39 +1894,27 @@
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="fullName" placeholder="Full Name" required>
                 </div>
-
                 <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="emailAddress" placeholder="Email Address"
-                    required>
+                  <input type="email" class="form-control" name="email" id="emailAddress" placeholder="Email Address" required>
                 </div>
-
                 <div class="form-group">
                   <input type="tel" class="form-control" name="phone" id="phoneNumber" placeholder="Phone Number">
                 </div>
-
                 <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="emailSubject"
-                    placeholder="What can we help you build?" required>
+                  <input type="text" class="form-control" name="subject" id="emailSubject" placeholder="What can we help you build?" required>
                 </div>
-
                 <div class="form-group">
                   <textarea class="form-control" name="message" id="messageContent" rows="6"
-                    placeholder="Tell us about your goals, your stack, or where you want AI to make an impact..."
-                    required></textarea>
+                    placeholder="Tell us about your goals, your stack, or where you want AI to make an impact..." required></textarea>
                 </div>
-
                 <div class="my-3">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
                 </div>
-
                 <button type="submit" class="submit-btn ai-magnetic">
-                  <span class="btn-text"><a href="mailto:info@ridewave.in"
-                      style="color: white; text-decoration: none;">Send Message</a></span>
-                  <span class="btn-icon">
-                    <i class="bi bi-arrow-right"></i>
-                  </span>
+                  <span class="btn-text"><a href="mailto:info@ridewave.in" style="color: white; text-decoration: none;">Send Message</a></span>
+                  <span class="btn-icon"><i class="bi bi-arrow-right"></i></span>
                 </button>
               </form>
             </div>
@@ -2660,25 +1929,19 @@
        ★ FOOTER — MEGA FOOTER (RIDEWAVE BRAND) ★
        ============================================================ -->
   <footer id="footer" class="rw-mega-footer">
-
     <div class="container">
-
       <div class="row gx-4 gy-5">
 
-        <!-- Brand + Description + Recent Posts -->
+        <!-- Brand + Description -->
         <div class="col-lg-3 col-md-6">
           <div class="rw-foot-brand">
             <a href="index.html" class="rw-foot-logo">
               <h1 class="sitename"><b style="color: #ff8a00;">R</b>ide<b style="color: #ff8a00;">W</b>ave</h1>
             </a>
             <p class="rw-foot-desc">
-              Building AI-powered digital experiences,
-              scalable cloud platforms, enterprise SaaS
-              products, and modern mobile applications
-              for startups and enterprises worldwide.
+              Building AI-powered digital experiences, scalable cloud platforms, enterprise SaaS
+              products, and modern mobile applications for startups and enterprises worldwide.
             </p>
-
-
           </div>
         </div>
 
@@ -2690,7 +1953,7 @@
             <li><a href="#about">Vision &amp; Mission</a></li>
             <li><a href="#about">Engagement Model</a></li>
             <li><a href="#features">Development Process</a></li>
-            <li><a href="#ai-portfolio">Case Studies</a></li>
+            <li><a href="#work">Case Studies</a></li>
             <li><a href="#contact">Careers</a></li>
             <li><a href="#contact">Partners</a></li>
             <li><a href="#faq">FAQs</a></li>
@@ -2737,7 +2000,6 @@
         <!-- Technology stack -->
         <div class="col-lg-2 col-md-6 col-6">
           <h5 class="rw-col-head"><i class="bi bi-cpu-fill"></i> Technology</h5>
-
           <div class="rw-subhead">Frontend</div>
           <ul class="rw-foot-list">
             <li><a href="#">React</a></li>
@@ -2746,7 +2008,6 @@
             <li><a href="#">TypeScript</a></li>
             <li><a href="#">Tailwind CSS</a></li>
           </ul>
-
           <div class="rw-subhead">Backend</div>
           <ul class="rw-foot-list">
             <li><a href="#">Python</a></li>
@@ -2755,7 +2016,6 @@
             <li><a href="#">Node.js</a></li>
             <li><a href="#">Go</a></li>
           </ul>
-
           <div class="rw-subhead">AI / ML</div>
           <ul class="rw-foot-list">
             <li><a href="#">OpenAI</a></li>
@@ -2770,7 +2030,6 @@
         <!-- Cloud + Database + Emerging -->
         <div class="col-lg-2 col-md-6 col-6">
           <h5 class="rw-col-head"><i class="bi bi-cloud-fill"></i> Cloud &amp; Data</h5>
-
           <div class="rw-subhead">Cloud</div>
           <ul class="rw-foot-list">
             <li><a href="#">AWS</a></li>
@@ -2779,7 +2038,6 @@
             <li><a href="#">Digital Ocean</a></li>
             <li><a href="#">Vercel</a></li>
           </ul>
-
           <div class="rw-subhead">DevOps</div>
           <ul class="rw-foot-list">
             <li><a href="#">Docker</a></li>
@@ -2787,7 +2045,6 @@
             <li><a href="#">Terraform</a></li>
             <li><a href="#">GitHub Actions</a></li>
           </ul>
-
           <div class="rw-subhead">Database</div>
           <ul class="rw-foot-list">
             <li><a href="#">MySQL</a></li>
@@ -2797,7 +2054,6 @@
             <li><a href="#">Apache Kafka</a></li>
             <li><a href="#">Elasticsearch</a></li>
           </ul>
-
           <div class="rw-subhead">Emerging Tech</div>
           <ul class="rw-foot-list">
             <li><a href="#ai-technologies">Generative AI</a></li>
@@ -2808,7 +2064,6 @@
         </div>
 
       </div>
-
     </div>
 
     <!-- Bottom bar -->
@@ -2816,10 +2071,7 @@
       <div class="container">
         <div class="row align-items-center gy-3">
           <div class="col-lg-6">
-            <p class="copyright">
-              © 2026 <b>RideWave Technologies Private Limited.</b> All rights reserved
-            </p>
-
+            <p class="copyright">© 2026 <b>RideWave Technologies Private Limited.</b> All rights reserved</p>
           </div>
           <div class="col-lg-6">
             <div class="legal-links">
@@ -2831,12 +2083,10 @@
         </div>
       </div>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -2847,7 +2097,175 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- ============================================================
+       ★ WORK / CASE STUDIES — interactive logic (own script tag) ★
+       ============================================================ -->
+  <script>
+    (function () {
+      const studies = [
+        {
+          id: 'meetspace', name: 'MeetSpace', icon: 'bi-camera-video-fill', c1: '#3b82f6', c2: '#1d4ed8',
+          industry: 'Communication & Collaboration',
+          tagline: 'A modern video conferencing platform for seamless virtual meetings, team collaboration and real-time communication.',
+          facts: { Platform: 'Web', Services: 'Frontend & Backend', Client: 'MeetSpace', Location: 'India' },
+          overview: 'MeetSpace is a modern video conferencing platform built to facilitate seamless virtual meetings, team collaboration and real-time communication, giving users a reliable, secure environment to host online meetings, share screens and engage in interactive discussions from anywhere.',
+          goals: 'Create a scalable, user-friendly video conferencing solution that supports businesses, educational institutions and remote teams.',
+          objectives: ['Develop a secure, high-performance conferencing platform.', 'Enable real-time video, audio and chat.', 'Provide screen-sharing for effective collaboration.', 'Ensure smooth performance across devices and browsers.'],
+          challenges: ['Delivering low-latency real-time communication.', 'Managing multiple participants efficiently.', 'Stable video/audio quality under varying network conditions.', 'Implementing WebRTC-based communication and scalability.'],
+          solution: ['Built a responsive, intuitive conferencing platform.', 'Implemented real-time video, audio and chat.', 'Added screen-sharing and participant management.', 'Optimized performance across devices and browsers.'],
+          features: [
+            { i: 'bi-camera-video-fill', t: 'HD Video & Audio', d: 'High-quality, low-latency communication.' },
+            { i: 'bi-display-fill', t: 'Screen Sharing', d: 'Share presentations and documents live.' },
+            { i: 'bi-chat-dots-fill', t: 'Real-Time Chat', d: 'Integrated messaging for instant collaboration.' },
+            { i: 'bi-calendar-check-fill', t: 'Meeting Management', d: 'Create, schedule and manage meetings.' },
+            { i: 'bi-people-fill', t: 'Participant Controls', d: 'Host controls for participants and permissions.' }
+          ],
+          results: 'MeetSpace delivered a seamless virtual communication experience that improved collaboration, enhanced meeting productivity and enabled efficient remote communication.'
+        },
+        {
+          id: 'achievers', name: 'Achievers Library', icon: 'bi-book-fill', c1: '#f59e0b', c2: '#b45309',
+          industry: 'Education Technology',
+          tagline: 'A study space management platform that simplifies library operations from a single centralized dashboard.',
+          facts: { Platform: 'Web', Services: 'Frontend & Backend', Client: 'Nithin', Location: 'India' },
+          overview: 'Achievers Library is a comprehensive study space management platform designed to simplify library operations, helping administrators manage memberships, seat allocations, attendance, subscriptions and student records through a centralized dashboard.',
+          goals: 'Digitize and automate daily library operations while improving member management and resource utilization.',
+          objectives: ['Automate seat allocation and membership management.', 'Track attendance and subscriptions efficiently.', 'Reduce manual administrative work.', 'Provide real-time operational insights.'],
+          challenges: ['Managing seat allocations dynamically.', 'Tracking memberships and renewals efficiently.', 'Maintaining accurate attendance records.', 'Handling large datasets with real-time reporting.'],
+          solution: ['Developed a centralized library management platform.', 'Automated seat allocation and membership tracking.', 'Implemented attendance monitoring and subscriptions.', 'Created an admin dashboard for operational insights.'],
+          features: [
+            { i: 'bi-grid-3x3-gap-fill', t: 'Seat Management', d: 'Efficient allocation and monitoring of seats.' },
+            { i: 'bi-person-badge-fill', t: 'Membership Management', d: 'Track memberships, renewals and subscriptions.' },
+            { i: 'bi-clipboard-check-fill', t: 'Attendance Tracking', d: 'Monitor student attendance in real time.' },
+            { i: 'bi-speedometer2', t: 'Admin Dashboard', d: 'Centralized operational data and reports.' },
+            { i: 'bi-arrow-repeat', t: 'Subscription Monitoring', d: 'Manage active and expired memberships.' }
+          ],
+          results: 'The platform significantly improved operational efficiency, reduced manual effort and enabled better management of library resources and memberships.'
+        },
+        {
+          id: 'fileflow', name: 'FileFlow', icon: 'bi-cloud-fill', c1: '#8b5cf6', c2: '#6d28d9',
+          industry: 'Cloud Storage & Document Management',
+          tagline: 'A cloud-based file management platform to securely store, organize and share documents.',
+          facts: { Platform: 'Web', Services: 'Frontend & Backend', Client: 'FileFlow', Location: 'India' },
+          overview: 'FileFlow is a cloud-based file management platform designed to help users securely store, organize and share documents, offering a streamlined experience for managing files and folders while ensuring accessibility and security.',
+          goals: 'Create a centralized file management solution that improves collaboration and document accessibility.',
+          objectives: ['Provide secure cloud storage capabilities.', 'Enable file sharing and collaboration.', 'Simplify document organization and retrieval.', 'Ensure scalability and data security.'],
+          challenges: ['Managing large volumes of files efficiently.', 'Implementing secure file access controls.', 'Maintaining fast search and retrieval performance.', 'Scalable cloud architecture and permission management.'],
+          solution: ['Developed a secure cloud-based file management platform.', 'Implemented folder and document organization.', 'Added file-sharing and access management.', 'Optimized file retrieval and search performance.'],
+          features: [
+            { i: 'bi-cloud-fill', t: 'Cloud Storage', d: 'Secure file storage and management.' },
+            { i: 'bi-folder-fill', t: 'Folder Management', d: 'Organize files using structured folders.' },
+            { i: 'bi-share-fill', t: 'File Sharing', d: 'Share documents securely with authorized users.' },
+            { i: 'bi-search', t: 'Search & Filters', d: 'Quickly locate files with advanced search.' },
+            { i: 'bi-shield-lock-fill', t: 'Access Control', d: 'Role-based permissions and file security.' }
+          ],
+          results: 'FileFlow improved document accessibility, simplified file management and enhanced collaboration through secure cloud-based storage and sharing.'
+        },
+        {
+          id: 'urscrm', name: 'URS CRM', icon: 'bi-people-fill', c1: '#10b981', c2: '#047857',
+          industry: 'Customer Relationship Management',
+          tagline: 'A CRM platform that streamlines leads, customer interactions and business workflows.',
+          facts: { Platform: 'Web', Services: 'Frontend & Backend', Client: 'Navika Technologies', Location: 'India' },
+          overview: 'URS CRM is a comprehensive customer relationship management solution developed to streamline lead management, customer interactions and business workflows, giving businesses a centralized system for managing customer data and tracking sales activities.',
+          goals: 'Improve customer engagement, sales tracking and operational efficiency through a centralized CRM platform.',
+          objectives: ['Manage leads and customer interactions efficiently.', 'Automate business workflows.', 'Improve reporting and analytics.', 'Enhance team productivity.'],
+          challenges: ['Managing large customer databases.', 'Tracking leads across multiple stages.', 'Providing accurate business insights.', 'Scalable architecture with role-based access.'],
+          solution: ['Built a centralized CRM platform for customer management.', 'Implemented lead tracking and workflow automation.', 'Added reporting and analytics dashboards.', 'Enabled role-based access and permission management.'],
+          features: [
+            { i: 'bi-funnel-fill', t: 'Lead Management', d: 'Track leads through the sales pipeline.' },
+            { i: 'bi-person-lines-fill', t: 'Customer Management', d: 'Centralized customer information.' },
+            { i: 'bi-bar-chart-fill', t: 'Reports & Analytics', d: 'Generate actionable business insights.' },
+            { i: 'bi-diagram-3-fill', t: 'Workflow Automation', d: 'Automate routine business processes.' },
+            { i: 'bi-shield-lock-fill', t: 'Role-Based Access', d: 'Secure access for different roles.' }
+          ],
+          results: 'URS CRM improved customer relationship management, streamlined sales operations, enhanced reporting and increased overall business productivity.'
+        }
+      ];
 
+      const grid = document.getElementById('csGrid');
+      const detail = document.getElementById('csDetail');
+      if (!grid || !detail) return;
+
+      // Build the cards
+      studies.forEach(function (s) {
+        const card = document.createElement('article');
+        card.className = 'cs-card';
+        card.innerHTML =
+          '<div class="cs-banner" style="background:linear-gradient(135deg,' + s.c1 + ',' + s.c2 + ')">' +
+            '<span class="deco1"></span><span class="deco2"></span>' +
+            '<i class="bi ' + s.icon + '"></i>' +
+          '</div>' +
+          '<div class="cs-body">' +
+            '<div class="cs-logo-row">' +
+              '<div class="cs-logo" style="background:linear-gradient(135deg,' + s.c1 + ',' + s.c2 + ')"><i class="bi ' + s.icon + '"></i></div>' +
+              '<div><h3>' + s.name + '</h3><p class="cs-ind">' + s.industry + '</p></div>' +
+            '</div>' +
+            '<p class="cs-tag">' + s.tagline + '</p>' +
+            '<div class="cs-chips">' +
+              '<span class="chip">' + s.facts.Platform + '</span>' +
+              '<span class="chip">' + s.facts.Services + '</span>' +
+              '<span class="chip">' + s.facts.Location + '</span>' +
+            '</div>' +
+            '<span class="cs-open">Read case study <i class="bi bi-arrow-right"></i></span>' +
+          '</div>';
+        card.addEventListener('click', function () { openDetail(s.id); });
+        grid.appendChild(card);
+      });
+
+      function scrollToWork() {
+        const sec = document.getElementById('work');
+        if (sec) window.scrollTo({ top: sec.offsetTop - 70, behavior: 'smooth' });
+      }
+
+      function openDetail(id) {
+        const s = studies.find(function (x) { return x.id === id; });
+        if (!s) return;
+        const grad = 'linear-gradient(135deg,' + s.c1 + ',' + s.c2 + ')';
+        const facts = Object.keys(s.facts).map(function (k) {
+          return '<div class="fact"><div class="k">' + k + '</div><div class="v">' + s.facts[k] + '</div></div>';
+        }).join('');
+        const li = function (arr) { return arr.map(function (x) { return '<li>' + x + '</li>'; }).join(''); };
+        const feats = s.features.map(function (f) {
+          return '<div class="feat"><div class="fi" style="background:' + grad + '"><i class="bi ' + f.i + '"></i></div><strong>' + f.t + '</strong><span>' + f.d + '</span></div>';
+        }).join('');
+
+        detail.innerHTML =
+          '<button class="back-btn" type="button" id="csBackBtn"><i class="bi bi-arrow-left"></i> Back to all work</button>' +
+          '<div class="d-hero">' +
+            '<div class="d-art" style="background:' + grad + '"><span class="o1"></span><span class="o2"></span><i class="bi ' + s.icon + '"></i></div>' +
+            '<div class="d-head">' +
+              '<div class="cs-logo" style="background:' + grad + '"><i class="bi ' + s.icon + '"></i></div>' +
+              '<div><h2>' + s.name + '</h2><p>' + s.tagline + '</p></div>' +
+            '</div>' +
+          '</div>' +
+          '<div class="factbar">' + facts + '</div>' +
+          '<div class="d-grid">' +
+            '<div>' +
+              '<div class="block"><h4><i class="bi bi-info-circle-fill"></i> Overview</h4><p>' + s.overview + '</p></div>' +
+              '<div class="block"><h4><i class="bi bi-bullseye"></i> Business Goals</h4><p>' + s.goals + '</p>' +
+                '<h4 style="font-size:15px;margin-top:16px"><i class="bi bi-check2-circle"></i> Key Objectives</h4><ul>' + li(s.objectives) + '</ul></div>' +
+              '<div class="block"><h4><i class="bi bi-exclamation-triangle-fill"></i> Challenges</h4><ul>' + li(s.challenges) + '</ul></div>' +
+              '<div class="block"><h4><i class="bi bi-lightbulb-fill"></i> Solution We Offered</h4><ul>' + li(s.solution) + '</ul></div>' +
+            '</div>' +
+            '<div>' +
+              '<div class="block"><h4><i class="bi bi-stars"></i> Key Features</h4><div class="feat-grid">' + feats + '</div></div>' +
+              '<div class="block results"><h4><i class="bi bi-trophy-fill"></i> Final Results</h4><p>' + s.results + '</p></div>' +
+            '</div>' +
+          '</div>';
+
+        grid.style.display = 'none';
+        detail.classList.add('show');
+        document.getElementById('csBackBtn').addEventListener('click', closeDetail);
+        scrollToWork();
+      }
+
+      function closeDetail() {
+        detail.classList.remove('show');
+        detail.innerHTML = '';
+        grid.style.display = '';
+        scrollToWork();
+      }
+    })();
+  </script>
 
 </body>
 
